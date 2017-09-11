@@ -1,24 +1,24 @@
 
 # ![Important](/src/assets/images/logo.svg "Vue Example Project")
 
-## A Really Good Vue Example Project (and Tutorial)
+# Vue Example Project and Tutorial
 
 ## Why?
 
-1. All the other starter kits out there feel bloated and not very transparent.  
-2. You want a Tutorial (see below) included that explains how to recreate the whole project from scratch* if you wanted to.  
-3. You want something scalable with explanations of key configuration and optimization (also in the Tutorial...take a look 
-at the table of contents below).
+1. All the other starter kits out there feel bloated and not very transparent.
+2. You love Vue, but you need some opinionated app structure to get you going and a Tutorial that fully breaks down the project.   
+3. You want explanations on key configuration and optimization (see Tutorial below). 
 4. You aren't interested in Server Rendered (ie. Nuxt) for several reasons but mainly because your app is going to be private, 
 accessable via a login (no catering to crawlers).
 5. The example logo looks delicious.
 
-![Important](/src/assets/images/info.svg "Logo Title Text 1") **It's highly recommended to read through the tutorial below, as it will explain how the project is built from scratch\* and the different configuration needs of an App.** 
+
+## Live Demo
+
+You can see this project live here: https://www.prograhammer.com/vue-example-project.
 
 
-
-
-#### Featuring:
+## Featuring
 
 - Latest Vue 2.x.
 - Webpack 3.
@@ -33,12 +33,10 @@ accessable via a login (no catering to crawlers).
 - Proxying Requests.
 - Editor Configurations.
 - Up-to-date as Vue evolves.
-- Full Tutorial Included (see below).
-- Live Demo.
 - And More!
 
 ----------
-\*This project is built off of a combination of the [upcoming official Vue Webpack 3 template](https://github.com/vuejs-templates/webpack/pull/891) and the [official Vue PWA template](https://github.com/vuejs-templates/pwa). Clone the repo, do `npm install`, and **use right away**. Read through the tutorial below to get an idea of how to build the project from scratch and setup your editor (Visual Studio Code or Sublime Text 3).
+![Important](/src/assets/images/info.svg "Logo Title Text 1") This project is built off of a combination of the [upcoming official Vue Webpack 3 template](https://github.com/vuejs-templates/webpack/pull/891) and the [official Vue PWA template](https://github.com/vuejs-templates/pwa). Clone the repo, do `npm install`, and **use right away**. Read through the tutorial below to get an idea of how to build the project from scratch and setup your editor (Visual Studio Code or Sublime Text 3).
 
 ----------
 
@@ -115,7 +113,7 @@ accessable via a login (no catering to crawlers).
 
 ## Diff This Tutorial
 
-As Vue evolves, so will this tutorial. One easy way to stay up-to-date with changes is to fork this project, then copy-and-paste this `README.md` and your forked `README.md` into an online diff tool to see what has changed. You can also follow along with the Release Notes here on Github. For easier navigation and reading (especially from a mobile), the Live Demo of this project contains the full tutorial as well.  
+As Vue evolves, so will this tutorial. One easy way to stay up-to-date with changes is to fork this project, then use Github's diff on your `README.md` and this repo to see what's changed. You can also follow along with the Release Notes here on Github. For easier navigation and reading (especially from a mobile), the Live Demo of this project contains the full tutorial as well.  
 
 
 mention vscode built in MarkDown support.
