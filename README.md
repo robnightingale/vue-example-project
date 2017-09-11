@@ -1,7 +1,21 @@
 
-# Vue Example Project (and Tutorial)
+# ![Important](/src/assets/images/logo.svg "Vue Example Project")
+
+## A Really Good Vue Example Project (and Tutorial)
+
+## Why?
+
+1. All the other starter kits out there feel bloated and not very transparent.  
+2. You want a Tutorial (see below) included that explains how to recreate the whole project from scratch* if you wanted to.  
+3. You want something scalable with explanations of key configuration and optimization (also in the Tutorial...take a look 
+at the table of contents below).
+4. You aren't interested in Server Rendered (ie. Nuxt) for several reasons but mainly because your app is going to be private, 
+accessable via a login (no catering to crawlers).
+5. The example logo looks delicious.
 
 ![Important](/src/assets/images/info.svg "Logo Title Text 1") **It's highly recommended to read through the tutorial below, as it will explain how the project is built from scratch\* and the different configuration needs of an App.** 
+
+
 
 
 #### Featuring:
