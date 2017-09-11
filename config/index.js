@@ -29,8 +29,10 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/auth': {
-        // TODO: Update to use node express oauth2 server for better example.
-        target: 'http://brentertainment.com/oauth2/lockdin/token',  // <-- demo oauth2 server, https://github.com/bshaffer/oauth2-demo-php
+        // @TODO: You need to replace this with your own backend API.
+        // Demo OAuth2 server https://github.com/bshaffer/oauth2-demo-php.
+        // Username: demouser  Password: demopass
+        target: 'http://brentertainment.com/oauth2/lockdin/token',
         changeOrigin: true,
         ws: true,
         pathRewrite: {
@@ -40,11 +42,12 @@ module.exports = {
         }
       },
       '/api': {
-        target: 'http://brentertainment.com/oauth2',  // api server
-        changeOrigin: true,                           // needed for virtual hosted sites
-        ws: true,                                     // proxy websockets
+        target: 'http://brentertainment.com/oauth2',  // <-- Api server.
+        changeOrigin: true,                           // <-- For virtual hosted sites.
+        ws: true,                                     // <-- Proxy websockets.
         pathRewrite: {
-          '^/api': '/lockdin'     // rewrite path localhost:8080/api to http://brentertainment.com/oauth2/lockdin
+         // Rewrite path localhost:8080/api to http://brentertainment.com/oauth2/lockdin.
+          '^/api': '/lockdin'
         },
         router: {
           // when request.headers.host == 'dev.localhost:3000',

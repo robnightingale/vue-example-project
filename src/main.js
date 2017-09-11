@@ -1,33 +1,36 @@
-/* Twitter Bootstrap JS (this could also be handled in an app.js file) */
-require('bootstrap')
-
 /* Vue */
 import Vue from 'vue'
-import router from './router'
-import store from './store'
-import VueResource from 'vue-resource'
-
-Vue.use(VueResource)
 Vue.config.productionTip = false
 
-/* App sass */
-import './assets/style/app.scss'
+/* Router */
+import router from './router'
 
-/* App component */
-import App from './components/App'
+/* Central store */
+import store from './vuex'
+import { sync } from 'vuex-router-sync'
+sync(store, router) // <-- Sync router to store, as `store.state.route`.
+
+/* HTTP client */
+import VueResource from 'vue-resource'
+Vue.use(VueResource)
+
+/* Buefy/Bulma UI Framework */
+import Buefy from 'buefy'
+Vue.use(Buefy)
+
+/* Styles */
+require('./styles/scss/main.scss')
+require('./styles/stylus/main.styl')
 
 /* Auth plugin */
-import Auth from './auth'
+import Auth from './utils/auth'
 Vue.use(Auth)
+
+import App from './components/app/app'
 
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
-  // Attach the Vue instance to the window,
-  // so it's available globally.
-  created: function () {
-    window.Vue = this
-  },
   router,
   store,
   render: h => h(App)
