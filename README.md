@@ -1,42 +1,51 @@
 
-# ![Important](/src/assets/images/logo.svg "Vue Example Project")
+# ![Important](/src/assets/images/logo.svg "The Vue Project")
 
-# Vue Example Project and Tutorial
+# *The Vue Project*
+### An example Vue project. A clean, scalable, optimized starter PWA, tutorial, and set of examples.
 
 ## Why?
 
-1. All the other starter kits out there feel bloated and not very transparent.
-2. You love Vue, but you need some opinionated app structure to get you going and a Tutorial that fully breaks down the project.   
-3. You want explanations on key configuration and optimization (see Tutorial below). 
-4. You aren't interested in Server Rendered (ie. Nuxt) for several reasons but mainly because your app is going to be private, 
-accessable via a login (no catering to crawlers).
-5. The example logo looks delicious.
+1. All the other starter kits out there feel bloated and not very transparent.  
+2. All the other examples out there focus on a specific problem domain (ie. My Shopping Cart). I wanted 
+to provide a project that provided various examples you could pick and choose from instead of trying to learn the 
+buisiness of the demo you downloaded.
+3. You love Vue, but you need some opinionated app structure to get you going and a Tutorial that fully breaks down the project.   
+4. You want explanations on key configuration and optimization. 
+5. You aren't interested in Server Rendered (ie. Nuxt) for several reasons but mainly because your app is going to be private, 
+accessable via a login (no catering to crawlers) and served from affordable, high-traffic static servers.
 
+## Live Demo and Tutorial
 
-## Live Demo
+The live demo is the same as the project you will install. It contains the tutorial and examples. Visit it here: https://www.prograhammer.com/the-vue-project#intro.
 
-You can see this project live here: https://www.prograhammer.com/vue-example-project.
-
+Almost all pages are turned on as public but you will most likely want them private. See the installation
+ instructions on how to easily make them private. You can get a glimpse of what that is like by seeing the login here: 
+https://www.prograhammer.com/the-vue-project.
 
 ## Featuring
 
-- Latest Vue 2.x.
-- Webpack 3.
-- SPA/PWA.
-- ESLint.
-- Vue-cli, VueRouer, Vuex, VueResource.
-- Sass/Stylus, Buefy/Bulma (also instructions on Twitter Bootstrap 4).
-- Pug (formerly Jade).
-- Authentication with OAuth2.
-- Chunking.
-- Optimizations.
-- Proxying Requests.
-- Editor Configurations.
-- Up-to-date as Vue evolves.
-- And More!
+- The project started with **Vue.js 2.4+, Webpack 3.5+, and the official PWA template** and was adjusted and built up from there. 
+- **Tutorial**. This project is strongly focused on teaching (and learning, because aren't we all in
+[the Javascript world](https://hackernoon.com/how-it-feels-to-learn-javascript-in-2016-d3a717dd577f), instead of just 
+giving you the magic.  
+- **Client-side**, static Single-Page App so you can take advantage of the more affordable high-traffic 
+static servers. How affordable? Well, this live demo is being served to you free-of-charge
+ from GitHub. That's possible because GitHub pages serves static content (the server isn't rendering anything). 
+ You'll also find many free CDN's who will serve your static content. This project is also focused on the needs  
+ of a private app (accessible via login), where your SPA/PWA makes async API calls to your backend server 
+ (Java, Node, PHP, whatever). 
+- **Scalable and optimized** (discusses and incorporates approaches like Webpack chunking, named route chunking,
+ structuring styles, proxying to your backend API server, reducing complexity, working in a production environment, and more).
+- **Clean** (organized structure, well documented in tutorial, latest tooling such as Pug/Stylus, and more).
+- **Security**: OAuth2, Cookies and CSRF protection.  
+- **Community opinionated**. Open to PR's, suggestions, questions. 
+- Ships with a helpful set of UI components to get you started thanks to **Buefy/Bulma** (but we've included
+ a few notes on Twitter Bootstrap setup and jQuery, if you must!).
 
 ----------
-![Important](/src/assets/images/info.svg "Logo Title Text 1") This project is built off of a combination of the [upcoming official Vue Webpack 3 template](https://github.com/vuejs-templates/webpack/pull/891) and the [official Vue PWA template](https://github.com/vuejs-templates/pwa). Clone the repo, do `npm install`, and **use right away**. Read through the tutorial below to get an idea of how to build the project from scratch and setup your editor (Visual Studio Code or Sublime Text 3).
+
+![Important](/src/assets/images/info.svg "Logo Title Text 1") This project is built off of a combination of the [upcoming official Vue Webpack 3 template](https://github.com/vuejs-templates/webpack/pull/891) and the [official Vue PWA template](https://github.com/vuejs-templates/pwa). Clone the repo, do `npm install`, and then `npm run dev` to see it. Read through the tutorial below to get an idea of how you can build the project from scratch. Details on how to set things up for your production domain are also included.
 
 ----------
 
@@ -110,13 +119,6 @@ You can see this project live here: https://www.prograhammer.com/vue-example-pro
 - [Create and Publish a Library for Other Developers to Use](#create-and-publish-a-library-for-other-developers-to-use)
 - [Quick Learning Webpack Resources](#quick-learning-webpack-resources)
 *Table of contents generated with [markdown-toc](http://ecotrust-canada.github.io/markdown-toc/).*  
-
-## Diff This Tutorial
-
-As Vue evolves, so will this tutorial. One easy way to stay up-to-date with changes is to fork this project, then use Github's diff on your `README.md` and this repo to see what's changed. You can also follow along with the Release Notes here on Github. For easier navigation and reading (especially from a mobile), the Live Demo of this project contains the full tutorial as well.  
-
-
-mention vscode built in MarkDown support.
 
 ## Todo  
   

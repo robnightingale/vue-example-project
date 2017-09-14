@@ -1,23 +1,23 @@
 <template lang="pug">
-  .my-app-nav(v-if="auth.isLoggedIn")
+  .my-main-nav(v-if="auth.isLoggedIn")
     .container
       nav.navbar
         .navbar-brand
-          router-link.navbar-item.my-brand(v-bind:to="{ name: 'dashboard' }")
-            img.my-app-nav__logo(src='../../assets/images/logo.svg' alt='Vue Example Project')
+          router-link.navbar-item.my-brand(v-bind:to="{ name: 'installation' }")
+            img.my-main-nav__logo(src='../../../assets/images/logo.svg' alt='Vue Example Project')
           .navbar-item.is-hidden-desktop
             b-dropdown.has-text-dark(position='is-bottom-left')
-              img.my-avatar(slot='trigger' src='../../assets/images/profile.jpg')
+              img.my-avatar(slot='trigger' src='../../../assets/images/profile.jpg')
               b-dropdown-item.has-link
-                router-link.navbar-item(v-bind:to="{ name: 'dashboard' }") 
+                router-link.navbar-item(v-bind:to="{ name: 'installation' }") 
                   b-icon(icon='account_circle' style='padding-right: 20px;')
                   | Account               
               b-dropdown-item.has-link
-                router-link.navbar-item(v-bind:to="{ name: 'dashboard' }") 
+                router-link.navbar-item(v-bind:to="{ name: 'installation' }") 
                   b-icon(icon='supervisor_account' style='padding-right: 20px;')
                   | Orgs   
               b-dropdown-item.has-link
-                router-link.navbar-item(v-bind:to="{ name: 'dashboard' }") 
+                router-link.navbar-item(v-bind:to="{ name: 'installation' }") 
                   b-icon(icon='compare_arrows' style='padding-right: 20px;')
                   | Switch Org  
               hr.navbar-divider
@@ -31,7 +31,7 @@
           .navbar-start
             .navbar-item.has-dropdown.is-hoverable
               a.navbar-link.is-active(href='/documentation/overview/start/')
-                | Dashboards
+                | Documentation
               .navbar-dropdown
                 a.navbar-item(href='/documentation/overview/start/')
                   | Overview
@@ -56,12 +56,12 @@
                       a.view-all-versions(href='/versions') View all versions
             .navbar-item.has-dropdown.is-hoverable
               a.navbar-link.is-active(href='/documentation/overview/start/')
-                | Listings
+                | Basic Examples
               .navbar-dropdown
-                router-link.navbar-item(v-bind:to="{ name: 'dashboard' }") Editor
+                router-link.navbar-item(v-bind:to="{ name: 'installation' }") Editor
             .navbar-item.has-dropdown.is-hoverable
               a.navbar-link(href='http://bulma.io/blog/')
-                | Tools
+                | Advanced
               #blogDropdown.navbar-dropdown(data-style='width: 18rem;')
                 a.navbar-item(href='/2017/07/24/access-previous-bulma-versions/')
                   .navbar-content
@@ -95,7 +95,7 @@
                             span Subscribe
             .navbar-item.has-dropdown.is-hoverable
               .navbar-link
-                | Reports
+                | Design
               #moreDropdown.navbar-dropdown
                 a.navbar-item(href='http://bulma.io/extensions/')
                   .level.is-mobile
@@ -109,31 +109,15 @@
                       .level-item
                         span.icon.has-text-info
                           i.fa.fa-plug
-            .navbar-item.has-dropdown.is-hoverable
-              .navbar-link
-                | More
-              #moreDropdown.navbar-dropdown
-                a.navbar-item(href='http://bulma.io/extensions/')
-                  .level.is-mobile
-                    .level-left
-                      .level-item
-                        p
-                          strong Extensions
-                          br
-                          small Side projects to enhance Bulma
-                    .level-right
-                      .level-item
-                        span.icon.has-text-info
-                          i.fa.fa-plug
+
           .navbar-end
             .navbar-item.has-dropdown.is-hoverable
               .navbar-link
-                img.my-avatar(src='../../assets/images/profile.jpg')
+                img.my-avatar(src='../../../assets/images/profile.jpg')
                 | David Graham
               .navbar-dropdown
-                router-link.navbar-item(v-bind:to="{ name: 'dashboard' }") Account
-                router-link.navbar-item(v-bind:to="{ name: 'dashboard' }") Orgs
-                router-link.navbar-item(v-bind:to="{ name: 'dashboard' }") Switch Org
+                router-link.navbar-item(v-bind:to="{ name: 'installation' }") My Account
+                router-link.navbar-item(v-bind:to="{ name: 'installation' }") Support
                 hr.navbar-divider
                 a.navbar-item(@click='logout()')
                   b-icon(icon="exit_to_app", style='padding-right: 10px;')
@@ -175,7 +159,7 @@ export default {
 <style lang="stylus">
   #app
   
-    .my-app-nav
+    .my-main-nav
       background-color: $my-primary
       border-bottom: 1px solid rgba(255, 255, 255, 0.5)
 

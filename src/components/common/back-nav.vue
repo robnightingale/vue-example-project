@@ -1,0 +1,47 @@
+<template lang="pug">
+  .my-back-nav
+    .container
+      nav.navbar
+        .navbar-brand
+          router-link.navbar-item.my-brand(v-bind:to="{ name: 'overview' }")
+            b-icon(icon='arrow_back' type='is-white')
+          .navbar-item.subtitle.has-text-white {{ title }}
+</template>
+
+<script>
+export default {
+  props: {
+    title: {
+      type: String,
+      default: ''
+    }
+  },
+
+  data () {
+    return {
+
+    }
+  },
+
+  methods: {
+
+  }
+}
+
+</script>
+
+<style lang="stylus">
+  #app
+  
+    .my-back-nav
+      background-color: $my-primary
+      border-bottom: 1px solid rgba(255, 255, 255, 0.5)
+
+      .navbar
+        background-color: $my-primary
+        
+      .navbar-item:hover > a, 
+      .navbar-item:hover > .navbar-link,
+      .navbar-item:hover .icon > i
+        color: $my-black
+</style>

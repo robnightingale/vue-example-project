@@ -14,9 +14,15 @@ sync(store, router) // <-- Sync router to store, as `store.state.route`.
 import VueResource from 'vue-resource'
 Vue.use(VueResource)
 
-/* Buefy/Bulma UI Framework */
+/* Buefy/Bulma UI Framework and related. */
 import Buefy from 'buefy'
 Vue.use(Buefy)
+
+/* Global Components */
+import MainNav from './components/common/main/nav'
+import MainFooter from './components/common/main/footer'
+Vue.component('main-nav', MainNav)
+Vue.component('main-footer', MainFooter)
 
 /* Styles */
 require('./styles/scss/main.scss')
@@ -26,7 +32,7 @@ require('./styles/stylus/main.styl')
 import Auth from './utils/auth'
 Vue.use(Auth)
 
-import App from './components/app/app'
+import App from './app'
 
 /* eslint-disable no-new */
 new Vue({

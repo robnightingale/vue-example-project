@@ -1,5 +1,5 @@
 <template lang="pug">
-  footer.footer.has-text-white(v-if="$store.state.auth.isLoggedIn" style='background-color:#4A4A4A;')
+  .my-main-footer.footer.has-text-white(v-if="$store.state.auth.isLoggedIn" style='background-color:#4A4A4A;')
     .container
       .content.has-text-centered
         p
