@@ -1,19 +1,20 @@
 {
-  "name": "vue-example-project",
+  "name": "the-vue-project",
   "short_name": "example",
   "icons": [
     {
-      "src": "/static/img/icons/android-chrome-192x192.png",
+      "src": "/the-vue-project/static/img/icons/android-chrome-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/static/img/icons/android-chrome-512x512.png",
+      "src": "/the-vue-project/static/img/icons/android-chrome-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
   ],
-  "start_url": "/index.html",
+  "start_url": "/the-vue-project/",
+  "scope": "/the-vue-project/",
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#4DBA87"
