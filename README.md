@@ -1,5 +1,5 @@
 
-# ![Important](/src/assets/images/logo.svg "Example Vue Project")
+# ![Important](/src/assets/images/logo-readme.svg "Example Vue Project")
 
 # *Example Vue Project*
 ### An example Vue project called "Vue Donuts". A clean, scalable, optimized starter PWA, tutorial, and set of examples.
