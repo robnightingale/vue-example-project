@@ -10,12 +10,12 @@
    version="1.1"
    x="0px"
    y="0px"
-   viewBox="0 0 447.99445 84.071249"
+   viewBox="0 0 447.99442 106.89139"
    id="svg4171"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="logo.svg"
-   width="447.99445"
-   height="84.071251">
+   sodipodi:docname="logo-readme.svg"
+   width="447.99442"
+   height="106.8914">
   <metadata
      id="metadata4185">
     <rdf:RDF>
@@ -49,7 +49,7 @@
      fit-margin-bottom="0"
      inkscape:zoom="1.654"
      inkscape:cx="201.12147"
-     inkscape:cy="11.096767"
+     inkscape:cy="33.916908"
      inkscape:window-x="0"
      inkscape:window-y="27"
      inkscape:window-maximized="1"
@@ -131,8 +131,7 @@
      id="layer5"
      inkscape:label="text"
      style="display:inline"
-     transform="translate(6.4833808,0.9110001)"
-     sodipodi:insensitive="true">
+     transform="translate(6.4833808,0.9110001)">
     <g
        transform="translate(20.9423,-85.586158)"
        style="font-style:normal;font-weight:normal;font-size:98.80249023px;line-height:125%;font-family:sans-serif;letter-spacing:4.94012451px;word-spacing:0px;display:inline;fill:#653400;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -189,8 +188,7 @@
      id="layer4"
      inkscape:label="tagline"
      transform="translate(-55.088741,-27.387154)"
-     style="display:none"
-     sodipodi:insensitive="true">
+     style="display:inline">
     <g
        transform="translate(-94.038696,-12.696494)"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:2px;word-spacing:0px;fill:#653400;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"

@@ -7,7 +7,7 @@
             .column.is-one-third
               img.my-login__logo(src='../../assets/images/logo.svg' alt='Vue Example Project')
               .is-clearfix
-              .my-subtitle(style='padding-top: 15px; padding-bottom: 15px;') Sign in for more awesomeness.
+              .my-subtitle(style='padding-top: 15px; padding-bottom: 15px;') Sign in for more sweetness.
               .card
                 .card-content.has-text-left
                   h1.title.has-text-dark.has-text-centered
@@ -73,6 +73,6 @@
     .my-login
 
       &__logo
-        width: 260px
+        max-width: 300px
 
 </style>

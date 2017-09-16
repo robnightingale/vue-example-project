@@ -61,7 +61,7 @@
 </template>
 
 <script>
-import BackNav from '@/components/common/back-nav'
+import BackNav from '@/features/common/back-nav'
 
 export default {
   name: 'node',

@@ -75,7 +75,7 @@
 </template>
 
 <script>
-import DocsNav from '@/components/docs/nav'
+import DocsNav from '@/docs/nav'
 
 export default {
   name: 'intro',
