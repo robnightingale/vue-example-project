@@ -1,8 +1,8 @@
 
-# ![Important](/src/assets/images/logo.svg "The Vue Project")
+# ![Important](/src/assets/images/logo.svg "Example Vue Project")
 
-# *The Vue Project*
-### An example Vue project. A clean, scalable, optimized starter PWA, tutorial, and set of examples.
+# *Example Vue Project*
+### An example Vue project called "Vue Donuts". A clean, scalable, optimized starter PWA, tutorial, and set of examples.
 
 ## Why?
 
@@ -17,11 +17,11 @@ accessable via a login (no catering to crawlers) and served from affordable, hig
 
 ## Live Demo and Tutorial
 
-The live demo is the same as the project you will install. It contains the tutorial and examples. Visit it here: https://www.prograhammer.com/the-vue-project#intro.
+The live demo is the same as the project you will install. It contains the tutorial and examples. Visit it here: https://www.prograhammer.com/example-vue-project.
 
 Almost all pages are turned on as public but you will most likely want them private. See the installation
- instructions on how to easily make them private. You can get a glimpse of what that is like by seeing the login here: 
-https://www.prograhammer.com/the-vue-project.
+ instructions on how to easily make them private. 
+https://www.prograhammer.com/example-vue-project/#/docs/installation.
 
 ## Featuring
 
