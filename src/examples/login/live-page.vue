@@ -53,8 +53,7 @@
           password: this.credentials.password
         }
 
-        // auth.login(credentials, 'intro', ({isSuccess, data, errorMessage}) => {
-        auth.fakeLogin(credentials, 'intro', ({isSuccess, data, errorMessage}) => {
+        auth.login(credentials, 'intro', ({isSuccess, data, errorMessage}) => {
           if (!isSuccess) { console.log(errorMessage) }
         })
       }

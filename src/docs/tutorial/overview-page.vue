@@ -72,8 +72,87 @@
                     li
                       router-link(v-bind:to="{ name: 'pwa-configuration', query: { title: 'ESLint Ignore File' }}")  
                         | ESLint Ignore File
-                       
 
+                li 
+                  router-link(v-bind:to="{ name: 'styles' }") Styles
+                  ul
+                    li 
+                      router-link(v-bind:to="{ name: 'pwa-configuration', query: { title: 'Understanding PWA' }}")  
+                        | Understanding PWA
+                    li
+                      router-link(v-bind:to="{ name: 'pwa-configuration', query: { title: 'ESLint Ignore File' }}")  
+                        | ESLint Ignore File
+
+                li 
+                  router-link(v-bind:to="{ name: 'pug' }") Pug
+                  ul
+                    li 
+                      router-link(v-bind:to="{ name: 'pwa-configuration', query: { title: 'Understanding PWA' }}")  
+                        | Understanding PWA
+                    li
+                      router-link(v-bind:to="{ name: 'pwa-configuration', query: { title: 'ESLint Ignore File' }}")  
+                        | ESLint Ignore File
+
+                li 
+                  router-link(v-bind:to="{ name: 'global' }") Understanding Global
+                  ul
+                    li 
+                      router-link(v-bind:to="{ name: 'pwa-configuration', query: { title: 'Understanding PWA' }}")  
+                        | Understanding PWA
+                    li
+                      router-link(v-bind:to="{ name: 'pwa-configuration', query: { title: 'ESLint Ignore File' }}")  
+                        | ESLint Ignore File
+
+                li 
+                  router-link(v-bind:to="{ name: 'ui-frameworks' }") UI Frameworks
+                  ul
+                    li 
+                      router-link(v-bind:to="{ name: 'pwa-configuration', query: { title: 'Understanding PWA' }}")  
+                        | Understanding PWA
+                    li
+                      router-link(v-bind:to="{ name: 'pwa-configuration', query: { title: 'ESLint Ignore File' }}")  
+                        | ESLint Ignore File
+                       
+                li 
+                  router-link(v-bind:to="{ name: 'main-entry' }") Main Entry
+                  ul
+                    li 
+                      router-link(v-bind:to="{ name: 'pwa-configuration', query: { title: 'Understanding PWA' }}")  
+                        | Understanding PWA
+                    li
+                      router-link(v-bind:to="{ name: 'pwa-configuration', query: { title: 'ESLint Ignore File' }}")  
+                        | ESLint Ignore File
+
+                li 
+                  router-link(v-bind:to="{ name: 'http-client' }") HTTP Client
+                  ul
+                    li 
+                      router-link(v-bind:to="{ name: 'pwa-configuration', query: { title: 'Understanding PWA' }}")  
+                        | Understanding PWA
+                    li
+                      router-link(v-bind:to="{ name: 'pwa-configuration', query: { title: 'ESLint Ignore File' }}")  
+                        | ESLint Ignore File
+
+                li 
+                  router-link(v-bind:to="{ name: 'vuex' }") Vuex
+                  ul
+                    li 
+                      router-link(v-bind:to="{ name: 'pwa-configuration', query: { title: 'Understanding PWA' }}")  
+                        | Understanding PWA
+                    li
+                      router-link(v-bind:to="{ name: 'pwa-configuration', query: { title: 'ESLint Ignore File' }}")  
+                        | ESLint Ignore File
+
+                li 
+                  router-link(v-bind:to="{ name: 'authentication' }") Authentication
+                  ul
+                    li 
+                      router-link(v-bind:to="{ name: 'pwa-configuration', query: { title: 'Understanding PWA' }}")  
+                        | Understanding PWA
+                    li
+                      router-link(v-bind:to="{ name: 'pwa-configuration', query: { title: 'ESLint Ignore File' }}")  
+                        | ESLint Ignore File
+                
     main-footer
 
 </template>

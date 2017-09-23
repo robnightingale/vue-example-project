@@ -27,7 +27,7 @@ function guardRoute (to, from, next) {
  * The Router instance containing all the routes for the application.
  */
 const router = new Router({
-  base: '/the-vue-project',
+  base: '/vue-example-project',
   mode: 'hash',
   routes: routes.map(route => ({
     name: route.name,

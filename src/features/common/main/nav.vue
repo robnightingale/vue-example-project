@@ -4,10 +4,10 @@
       nav.navbar
         .navbar-brand
           router-link.navbar-item.my-brand(v-bind:to="{ name: 'installation' }")
-            img.my-main-nav__logo(src='../../../assets/images/logo.svg' alt='Vue Example Project')
+            img.my-main-nav__logo(src='~/@/assets/images/logo.svg' alt='Vue Example Project')
           .navbar-item.is-hidden-desktop
             b-dropdown.has-text-dark(position='is-bottom-left')
-              img.my-avatar(slot='trigger' src='../../../assets/images/profile.jpg')
+              img.my-avatar(slot='trigger' src='~/@/assets/images/profile.jpg')
               b-dropdown-item.has-link
                 router-link.navbar-item(v-bind:to="{ name: 'installation' }") 
                   b-icon(icon='account_circle' style='padding-right: 20px;')
@@ -56,9 +56,9 @@
                       a.view-all-versions(href='/versions') View all versions
             .navbar-item.has-dropdown.is-hoverable
               a.navbar-link.is-active(href='/documentation/overview/start/')
-                | Basic Examples
+                | Examples
               .navbar-dropdown
-                router-link.navbar-item(v-bind:to="{ name: 'installation' }") Editor
+                router-link.navbar-item(v-bind:to="{ name: 'examples-login' }") Logins
             .navbar-item.has-dropdown.is-hoverable
               a.navbar-link(href='http://bulma.io/blog/')
                 | Advanced
@@ -113,7 +113,7 @@
           .navbar-end
             .navbar-item.has-dropdown.is-hoverable
               .navbar-link
-                img.my-avatar(src='../../../assets/images/profile.jpg')
+                img.my-avatar(src='~/@/assets/images/profile.jpg')
                 | David Graham
               .navbar-dropdown
                 router-link.navbar-item(v-bind:to="{ name: 'installation' }") My Account
@@ -125,7 +125,7 @@
 </template>
 
 <script>
-import Auth from '@/utils/auth'
+import auth from '@/auth/helpers'
 
 export default {
   data () {
@@ -143,11 +143,11 @@ export default {
 
   methods: {
     logout () {
-      Auth.logout()
+      auth.logout()
     },
 
     itemSelected (name) {
-      if (name === 'Logout') Auth.logout()
+      if (name === 'Logout') auth.logout()
       if (name === 'Account') this.$router.push({ name: 'account' })
       if (name === 'Org') this.$router.push({ name: 'org' })
     }

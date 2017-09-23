@@ -1,38 +1,37 @@
-/* Vue */
 import Vue from 'vue'
-Vue.config.productionTip = false
-
-/* Router */
 import router from './router'
-
-/* Central store */
 import store from './vuex'
 import { sync } from 'vuex-router-sync'
-sync(store, router) // <-- Sync router to store, as `store.state.route`.
-
-/* HTTP client */
-import VueResource from 'vue-resource'
-Vue.use(VueResource)
-
-/* Buefy/Bulma UI Framework and related. */
+import http from './http'
+import auth from './auth'
 import Buefy from 'buefy'
+import URLSearchParams from 'url-search-params'
+import App from './app'
+import MainNav from './features/common/main/nav'
+import MainFooter from './features/common/main/footer'
+
+Vue.config.productionTip = false
+
+// Polyfills
+global.URLSearchParams = URLSearchParams
+
+// Sync router to store, as `store.state.route`.
+sync(store, router)
+
+// Http and Auth plugins
+Vue.use(http)
+Vue.use(auth)
+
+// Buefy/Bulma UI Framework.
 Vue.use(Buefy)
 
-/* Global Components */
-import MainNav from './components/common/main/nav'
-import MainFooter from './components/common/main/footer'
-Vue.component('main-nav', MainNav)
-Vue.component('main-footer', MainFooter)
-
-/* Styles */
+// Styles
 require('./styles/scss/main.scss')
 require('./styles/stylus/main.styl')
 
-/* Auth plugin */
-import Auth from './utils/auth'
-Vue.use(Auth)
-
-import App from './app'
+// Global Components
+Vue.component('main-nav', MainNav)
+Vue.component('main-footer', MainFooter)
 
 /* eslint-disable no-new */
 new Vue({

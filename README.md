@@ -1,27 +1,23 @@
 
-# ![Important](/src/assets/images/logo-readme.svg "Example Vue Project")
 
 # *Example Vue Project*
-### An example Vue project called "Vue Donuts". A clean, scalable, optimized starter PWA, tutorial, and set of examples.
+### A clean, scalable, optimized starter PWA Vue.js project and tutorial.
 
-## Why?
+## The Delicious Live Demo
 
-1. All the other starter kits out there feel bloated and not very transparent.  
-2. All the other examples out there focus on a specific problem domain (ie. My Shopping Cart). I wanted 
-to provide a project that provided various examples you could pick and choose from instead of trying to learn the 
-buisiness of the demo you downloaded.
-3. You love Vue, but you need some opinionated app structure to get you going and a Tutorial that fully breaks down the project.   
-4. You want explanations on key configuration and optimization. 
-5. You aren't interested in Server Rendered (ie. Nuxt) for several reasons but mainly because your app is going to be private, 
-accessable via a login (no catering to crawlers) and served from affordable, high-traffic static servers.
+# ![Important](/src/assets/images/logo-readme.svg "Example Vue Project")
 
-## Live Demo and Tutorial
+https://www.prograhammer.com/example-vue-project
 
-The live demo is the same as the project you will install. It contains the tutorial and examples. Visit it here: https://www.prograhammer.com/example-vue-project.
+The live demo *Vue Donuts* is the same as the project you will install. It contains the tutorial and examples.
 
-Almost all pages are turned on as public but you will most likely want them private. See the installation
- instructions on how to easily make them private. 
-https://www.prograhammer.com/example-vue-project/#/docs/installation.
+## Installation and Tutorial
+
+The installation and tutorial documentation are contained with the project itself, so visit the live demo 
+here: https://www.prograhammer.com/example-vue-project/#/docs.
+
+Note: Almost all pages are turned on as public but you will most likely want them private. See the installation
+ instructions on how to easily make them private, switch to router History (from Hash), and more.
 
 ## Featuring
 

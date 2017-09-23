@@ -7,7 +7,7 @@ export default [
   {
     name: 'login',
     path: '/login',
-    component: () => import(/* webpackChunkName: "login" */ '@/components/login/login-page.vue'),
+    component: () => import(/* webpackChunkName: "login" */ '@/features/login/login-page.vue'),
     isPublic: true
   },
   {
@@ -68,6 +68,60 @@ export default [
     name: 'pwa-configuration',
     path: '/tutorial/eslint',
     component: () => import(/* webpackChunkName: "eslint" */ '@/docs/tutorial/pwa-configuration-page.vue'),
+    isPublic: true
+  },
+  {
+    name: 'styles',
+    path: '/tutorial/styles',
+    component: () => import(/* webpackChunkName: "styles" */ '@/docs/tutorial/styles-page.vue'),
+    isPublic: true
+  },
+  {
+    name: 'pug',
+    path: '/tutorial/pug',
+    component: () => import(/* webpackChunkName: "pug" */ '@/docs/tutorial/pug-page.vue'),
+    isPublic: true
+  },
+  {
+    name: 'global',
+    path: '/tutorial/global',
+    component: () => import(/* webpackChunkName: "global" */ '@/docs/tutorial/global-page.vue'),
+    isPublic: true
+  },
+  {
+    name: 'ui-frameworks',
+    path: '/tutorial/ui-frameworks',
+    component: () => import(/* webpackChunkName: "ui-frameworks" */ '@/docs/tutorial/ui-frameworks-page.vue'),
+    isPublic: true
+  },
+  {
+    name: 'main-entry',
+    path: '/tutorial/main-entry',
+    component: () => import(/* webpackChunkName: "main-entry" */ '@/docs/tutorial/main-entry-page.vue'),
+    isPublic: true
+  },
+  {
+    name: 'routing',
+    path: '/tutorial/routing',
+    component: () => import(/* webpackChunkName: "routing" */ '@/docs/tutorial/routing-page.vue'),
+    isPublic: true
+  },
+  {
+    name: 'vuex',
+    path: '/tutorial/vuex',
+    component: () => import(/* webpackChunkName: "vuex" */ '@/docs/tutorial/vuex-page.vue'),
+    isPublic: true
+  },
+  {
+    name: 'authentication',
+    path: '/tutorial/authentication',
+    component: () => import(/* webpackChunkName: "authentication" */ '@/docs/tutorial/authentication-page.vue'),
+    isPublic: true
+  },
+  {
+    name: 'examples-login',
+    path: '/examples/login',
+    component: () => import(/* webpackChunkName: "examples-login" */ '@/examples/login/login-page.vue'),
     isPublic: true
   }
 ]

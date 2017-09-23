@@ -135,7 +135,7 @@
                 * The Router instance containing all the routes for the application.
                 */
                 const router = new Router({
-                  base: '/the-vue-project',  # <-- update here
+                  base: '/vue-example-project',  # <-- update here
                   mode: 'history',
                   routes: routes.map(route => ({
                     name: route.name,
@@ -145,6 +145,50 @@
                   }))
                 })
 
+          .title.is-6 Build Config's AssetsPublicPath 
+
+          .content
+            | Update your build config's assetsPublicPath:  
+
+          strong.my-italic build/config/index.js
+          pre.block
+            code.hljs.bash
+              :highlight(lang='bash')
+                // ...
+
+                module.exports = {
+                  build: {
+                    env: require('./prod.env'),
+                    index: path.resolve(__dirname, '../dist/index.html'),
+                    assetsRoot: path.resolve(__dirname, '../dist'),
+                    assetsSubDirectory: 'static',
+                    assetsPublicPath: '/vue-example-project',  # <-- update here
+
+          .title.is-6 Dev Config Proxy Work-Around
+
+          .content
+            | We also need to simulate the subfolder when we run the dev server. 
+            | Unfortunately we can't just update the 
+            code assetsPublicPath
+            |  here. So as a work-around we can just add another proxy rule:   
+
+          strong.my-italic build/config/index.js
+          pre.block
+            code.hljs.bash
+              :highlight(lang='bash')
+                // ...
+
+                dev: {
+                  env: require('./dev.env'),
+                  port: 8080,
+                  autoOpenBrowser: true,
+                  assetsSubDirectory: 'static',
+                  assetsPublicPath: '/',
+                  proxyTable: {
+                    '/vue-example-project/*': {                    # <-- proxy rule added
+                        target: 'http://localhost:[port]/',
+                        pathRewrite: { '^/vue-example-project': '' },
+                    },
 
     main-footer
 
