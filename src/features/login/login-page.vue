@@ -19,7 +19,7 @@
                   b-field(label='Password')
                     b-input(type='password' v-model='credentials.password' icon='vpn_key' password-reveal)
                   a.button.is-secondary.is-fullwidth(:class="{ 'is-loading': isLoading }" @click="submit")
-                    |Sign In
+                    |Sign Innn
 </template>
 
 <script>
