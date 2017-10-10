@@ -41,24 +41,24 @@ structuring styles, proxying to your backend API server, working in a production
 
 # Tutorial Table of Contents
 
-- Node
-  -- What About Node 8?
-  -- Install Node and NPM
-- Vue-Cli
-  -- Webpack 3 Template
-  -- Install Vue Cli and a New PWA Project
-- Editors
-  -- Advantages of VS Code
-  -- Setting Up VS Code
-  -- Setting Up Sublime Text 3
-- ESLint
-  -- Configure ESLint
-  -- ESLint Ignore File
-- Folders and Files
-  -- Breakdown of all the Folders
-  -- Component and Page Folder Structure
-  -- Configure For Your Site's Root Subfolder
-- PWA Configuration
+- Node  
+  - What About Node 8?  
+  - Install Node and NPM  
+- Vue-Cli  
+  -- Webpack 3 Template  
+  -- Install Vue Cli and a New PWA Project  
+- Editors  
+  -- Advantages of VS Code  
+  -- Setting Up VS Code  
+  -- Setting Up Sublime Text 3  
+- ESLint  
+  -- Configure ESLint  
+  -- ESLint Ignore File  
+- Folders and Files  
+  -- Breakdown of all the Folders  
+  -- Component and Page Folder Structure  
+  -- Configure For Your Site's Root Subfolder  
+- PWA Configuration  
   -- Understanding PWA
   -- The Manifest
   -- The Service Worker
