@@ -29,7 +29,7 @@
                 .card-footer
                   .my-v-spacer.is-hidden-touch
                   .button.is-white.has-text-primary.my-margin-auto
-                    span Check it out
+                    router-link(:to="{ name: 'login' }") Check it out 
               br
                           
               .card
@@ -43,7 +43,7 @@
                 .card-footer
                   .my-v-spacer.is-hidden-touch
                   .button.is-white.has-text-primary.my-margin-auto
-                    span Check it out
+                    router-link(:to="{ name: 'login-live' }") Check it out 
               br
 
               .card

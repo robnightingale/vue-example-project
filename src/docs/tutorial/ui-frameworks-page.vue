@@ -131,7 +131,7 @@
               :highlight(lang='sass')
                 i@import "~bootstrap/scss/bootstrap"
 
-          .title.is-4 Some Other Great Choices 
+          .title.is-4 Some Other Great Choices
 
           .content
             ul

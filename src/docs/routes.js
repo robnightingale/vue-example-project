@@ -100,6 +100,12 @@ export default [
     isPublic: true
   },
   {
+    name: 'http-client',
+    path: '/tutorial/http-client',
+    component: () => import(/* webpackChunkName: "http-client" */ '@/docs/tutorial/http-client-page.vue'),
+    isPublic: true
+  },
+  {
     name: 'vuex',
     path: '/tutorial/vuex',
     component: () => import(/* webpackChunkName: "vuex" */ '@/docs/tutorial/vuex-page.vue'),
@@ -109,6 +115,18 @@ export default [
     name: 'authentication',
     path: '/tutorial/authentication',
     component: () => import(/* webpackChunkName: "authentication" */ '@/docs/tutorial/authentication-page.vue'),
+    isPublic: true
+  },
+  {
+    name: 'testing',
+    path: '/tutorial/testing',
+    component: () => import(/* webpackChunkName: "testing" */ '@/docs/tutorial/testing-page.vue'),
+    isPublic: true
+  },
+  {
+    name: 'dev-tools',
+    path: '/tutorial/dev-tools',
+    component: () => import(/* webpackChunkName: "dev-tools" */ '@/docs/tutorial/dev-tools-page.vue'),
     isPublic: true
   }
 ]

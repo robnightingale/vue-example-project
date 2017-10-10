@@ -263,11 +263,15 @@
                     i
                       font-size: 32px          
 
-          .title.is-4 Use BEM Instead of Scoped in .Vue Files
-
+          .title.is-4 Use BEM with Scoped in .Vue Files
+          
           .content
             | To avoid collisions/confusion from vendor styles, your own global styles, 
-            | or parent/children styles in your Vue components, use BEM naming instead of Vue-loader's
+            | or parent/children styles (or even other BEM components, see 
+            code /examples/login/login-page
+            | and 
+            code /features/login/login-page
+            | ) in your Vue components, use BEM naming along with Vue-loader's
             | scoped attribute:  
             code &lt; style scoped &gt;
             |  .  If you use BEM in both Vue components and also CSS-only components/elements, 

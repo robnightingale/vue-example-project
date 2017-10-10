@@ -5,10 +5,7 @@ import axios from 'axios'
 const API_BASE_URL = '/api'
 const REFRESH_TOKEN_URL = '/auth'
 
-// @TODO: In your real app you should not expose this client secret here.
-// Instead, just pass username/password to your backend server and have your server
-// hold the client secret and pass onto your Oauth server (acting as a middleman).
-const CLIENT_SECRET = 'demopass' // Base64(client_id:client_secret) "demoapp:demopass"
+// const CLIENT_SECRET = 'demopass' // Base64(client_id:client_secret) "demoapp:demopass"
 
 export default {
 
@@ -60,7 +57,7 @@ export default {
     return axios({
       method: 'post',
       url: REFRESH_TOKEN_URL,
-      headers: {'Authorization': 'Basic ' + CLIENT_SECRET},
+      // headers: {'Authorization': 'Basic ' + CLIENT_SECRET},
       data: {
         grant_type: 'refresh_token',
         refresh_token: store.state.auth.refreshToken

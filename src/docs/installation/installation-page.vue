@@ -155,37 +155,6 @@
               li 
                 span.my-italic There are no extra packages currently used (more examples to be added soon though).
 
-          .title.is-4 Run the Dev Server
-
-          pre.block
-            code.bash
-              span.is-unselectable $ 
-              :highlight(lang='bash')
-                npm run dev
-
-          .content
-            | A new tab should automatically open in your browser at 
-            code http://localhost:8080
-
-          .title.is-6 View the app from your phone
-
-          .content
-            | Get your ip address from a terminal (if you are on Ubuntu, use ifconfig):  
-
-          pre.block
-            code.bash
-              :highlight(lang='bash')
-                $ ifconfig run dev
-
-          .content
-            | Turn Off your phone's Wifi, and then switch it back On. Now open up your phone's browser and go to the ip address 
-            | you found above, for example: 
-            code http://  192.168.1.66:8080
-            | . You should see the login screen. 
-
-          .content Now start reading through the tutorial. It will guide you specifically on how a PWA works (how you 
-            | add it to homescreen, what you can adjust, caveats, and so on). Happy coding! 
-
     main-footer
 
 </template>

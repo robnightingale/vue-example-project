@@ -31,31 +31,37 @@
                 | that will need to be deployed to your production environment.
               li
                 strong node_modules
-                | Where all your locally installed packages live.  
+                |  - Where all your locally installed packages live.  
               li
                 strong src/assets 
-                | Assets like images or fonts can be stored here. Webpack can process these (ie. fingerprinting).  
+                |  - Assets like images or fonts can be stored here. Webpack can process these (ie. fingerprinting).  
+              li
+                strong src/auth 
+                |  - The authentication code the app uses can be found here.  
               li
                 strong src/docs
-                | All docs (pages/components, mixins and other supporting js) go here.
+                |  - All docs (pages/components, mixins and other supporting js) go here.
               li
                 strong src/examples
-                | All examples (pages/components, mixins and other supporting js) are here. 
+                |  - All examples (pages/components, mixins and other supporting js) are here. 
               li
                 strong src/features
-                | All of your features you want to add (pages/components, mixins and other supporting js) go here.   
+                |  - All of your features you want to add (pages/components, mixins and other supporting js) go here.   
+              li
+                strong src/http
+                |  - We'll create our HTTP client here and list out all our endpoints to an API on a backend server. 
               li
                 strong src/router
-                | The VueRouter router settings and routes.  
+                |  - The VueRouter router settings and routes.  
               li
                 strong src/styles
-                | All css/scss/stylus styles for your app go here. 
+                |  - All css/scss/stylus styles for your app go here. 
               li
-                strong utils  
-                | Any cross-cutting js code (ie. authentication, js helper functions) go here.
+                strong src/utils  
+                |  - Any cross-cutting js code (ie. authentication, js helper functions) go here.
               li 
-                strong vuex
-                | Hold all files for configuring your Vuex central state management. (Named  
+                strong src/vuex
+                |  - Hold all files for configuring your Vuex central state management. (Named  
                 code Vuex
                 | instead of 
                 code store 
@@ -63,10 +69,10 @@
                 | in their buisiness domain).
               li
                 strong static
-                | Files that you don't need processed through Webpack.
+                |  - Files that you don't need processed through Webpack.
               li
                 strong test
-                | Where all your test cases live. 
+                |  - Where all your test cases live. 
 
 
           .title.is-4 Component and Page Folder Structure
@@ -77,12 +83,14 @@
             | folder and a 
             code /components 
             | folder. However, I suggest bringing these together and arranging vertically based on your buisiness domain instead
-            | horizontally by  
+            | of horizontally by  
             | file type. You don't have to be perfect on your grouping at first, but over time you will adjust as your buisiness 
-            | domain will mature. As it matures you will better organize and slice it. Ultimately, you end up with 
+            | domain will mature. As it matures you will better organize and slice it. You end up with 
             | a project that is easier
             | to split up into separate projects (think microservices?) if you feel the project has become too large
-            | and complex. Also, consider how much nicer it is to keep context in your head looking at a folder like this: 
+            | and complex. Context switching can also be reduced since related files (related by business/what feature they support)
+            | live a little closer to each other.
+            | Consider how much nicer it is to keep context in your head looking at a folder like this: 
             
           .content
             strong.my-italic Folder structure with more "vertical slicing"
@@ -112,7 +120,13 @@
             code features/
             | folder.
 
-          .title.is-4 Configure For Your Site's Root Subfolder 
+          .title.is-6 Why are component file names in kebab-case?
+
+          .content 
+            | Since some operating systems don't have case-sensitive file naming, the kebab-case is used for 
+            | all file names.
+
+          .title.is-4 Configure For Your Site's Root Subfolder
 
           .content
             | If you are viewing this app via the live demo on Github, you will notice the domain name and subfolder: 
@@ -162,7 +176,7 @@
                     index: path.resolve(__dirname, '../dist/index.html'),
                     assetsRoot: path.resolve(__dirname, '../dist'),
                     assetsSubDirectory: 'static',
-                    assetsPublicPath: '/vue-example-project',  # <-- update here
+                    assetsPublicPath: '/vue-example-project/',  # <-- update here
 
           .title.is-6 Dev Config Proxy Work-Around
 

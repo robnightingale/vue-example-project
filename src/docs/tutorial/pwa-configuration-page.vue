@@ -23,23 +23,7 @@
 
           .content
             | In summary, a PWA is an app that can easily be added to the homescreen and used without a browser bar.  
-            | The app feels and acts like a Native app.  We'll look at how to tackle some things in a PWA 
-            | app through different examples later in the Examples section of the Tutorial (ie. offline error handling). 
-
-          .content
-            | Let's first look at each piece of a PWA so that you know which adjustments you need to make. Then 
-            | we'll need to test it out on your mobile phone...
-
-            ul
-              li The Manifest (not to be confused with Webpack's Chunk Manifest): manifest.json
-              li The Service Worker: service-worker.js
-              li index.html
-              li Icon files
-
-
-
-              li The Viewport (Meta tag)
-              li Install Banners
+            | PWA's can also be tuned to do more offline. The app feels and acts more like a Native app.  
 
           .title.is-4 The Manifest
 
@@ -128,6 +112,13 @@
             | and service works can work) 
             | you will need to serve your app over HTTPS.
 
+          .title.is-6 Create your own Self-Signed SSL for testing on your localhost
+
+          .content You can read how to set up SSL on your localhost nginx server here: 
+            a(href='https://www.digitalocean.com/community/tutorials/how-to-create-a-self-signed-ssl-certificate-for-nginx-in-ubuntu-16-04')
+              | https://www.digitalocean.com/community/tutorials/how-to-create-a-self-signed-ssl-certificate-for-nginx-in-ubuntu-16-04
+            | .
+
           .title.is-6 CloudFlare Free HTTPS 
 
           .content
@@ -160,6 +151,7 @@
                 | with settings as 
                 code Always Use HTTPS
               li 6. Wait for a few hours (up to 24) and then Github should pick it up and it should work.
+              li 7. Turn off CloudFlare cacheing temporarily by turning on "Dev" mode so you can see changes immediately reflected online.
 
           .title.is-4 Install Banners and Add to Home Screen
 

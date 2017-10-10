@@ -11,12 +11,6 @@ const routes = [
     path: '/login',
     component: () => import(/* webpackChunkName: "login" */ '@/features/login/login-page.vue'),
     isPublic: true
-  },
-  {
-    name: 'examples-login',
-    path: '/examples/login',
-    component: () => import(/* webpackChunkName: "examples-login" */ '@/examples/login/login-page.vue'),
-    isPublic: true
   }
 ]
 

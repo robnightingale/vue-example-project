@@ -1,11 +1,13 @@
 <template lang="pug">
   .my-node-page
     main
-      back-nav(title='Main Entry')
+      back-nav(title='Entry and Polyfills')
       section.section
         .container
           .content
             | In this section of the tutorial we'll look at the main entry point for the app...
+
+          .title.is-4 What's in the Main Entry?  
 
           .content
             | The main entry point for the application:  
@@ -14,33 +16,40 @@
           pre.block
             code.hljs.javascript
               :highlight(lang='javascript')
-                /* Vue */
                 import Vue from 'vue'
+                import router from './router'
+                import store from './vuex'
+                import { sync } from 'vuex-router-sync'
+                import http from './http'
+                import auth from './auth'
+                import Buefy from 'buefy'
+                import URLSearchParams from 'url-search-params'
+                import App from './app'
+                import MainNav from './features/common/main/nav'
+                import MainFooter from './features/common/main/footer'
+
                 Vue.config.productionTip = false
 
-                /* Router */
-                import router from './router'
+                // Polyfills
+                global.URLSearchParams = URLSearchParams
 
-                /* Central store */
-                import store from './vuex'
+                // Sync router to store, as `store.state.route`.
+                sync(store, router)
 
-                /* HTTP client */
-                import VueResource from 'vue-resource'
-                Vue.use(VueResource)
+                // Http and Auth plugins
+                Vue.use(http)
+                Vue.use(auth)
 
-                /* Buefy/Bulma UI Framework */
-                import Buefy from 'buefy'
+                // Buefy/Bulma UI Framework.
                 Vue.use(Buefy)
 
-                /* Styles */
+                // Styles
                 require('./styles/scss/main.scss')
                 require('./styles/stylus/main.styl')
 
-                /* Auth plugin */
-                import Auth from './auth'
-                Vue.use(Auth)
-
-                import App from './components/app/app'
+                // Global Components
+                Vue.component('main-nav', MainNav)
+                Vue.component('main-footer', MainFooter)
 
                 /* eslint-disable no-new */
                 new Vue({
@@ -49,6 +58,10 @@
                   store,
                   render: h => h(App)
                 })
+
+          .title.is-4 Polyfills
+
+          .content Work-in-progress
 
     main-footer
 

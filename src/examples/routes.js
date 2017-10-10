@@ -8,5 +8,11 @@ export default [
     path: '/examples/login',
     component: () => import(/* webpackChunkName: "examples-login" */ '@/examples/login/login-page.vue'),
     isPublic: true
+  },
+  {
+    name: 'login-live',
+    path: '/examples/login-live',
+    component: () => import(/* webpackChunkName: "examples-login" */ '@/examples/login/live-page.vue'),
+    isPublic: true
   }
 ]

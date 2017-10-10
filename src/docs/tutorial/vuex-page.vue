@@ -81,6 +81,8 @@
 
           .title.is-4 Mutations, Getters, and Actions
 
+          .title.is-6 Mutations
+
           .content Now create a file to hold all the methods that will change the state in our Vuex store:
 
           strong.my-italic src/vuex/mutations.js
@@ -147,7 +149,7 @@
                   state.user.name = ''
                 }
 
-          .title.is-4 Getters
+          .title.is-6 Getters
 
           .content And some getters (although you can accesss the Vuex state directly as we'll see shortly):
 

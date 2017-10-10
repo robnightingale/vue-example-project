@@ -6,7 +6,7 @@
         .container
           .content
             | Before advancing on in this tutorial, it's important to understand the different ways
-            | we can use code globally in Webpack 2 or 3...
+            | we can use code globally in Webpack...
 
           .title.is-4 Webpack Evaluates Modules Only Once
 
@@ -52,7 +52,7 @@
 
           .content
             | Here's how you can do it using 
-            a(href='https://webpack.github.io/docs/shimming-modules.html#plugin-provideplugin') Webpack's ProvidePlugin
+            a(href='https://webpack.js.org/plugins/provide-plugin/') Webpack's ProvidePlugin
             | ( which makes a module available as a variable in every module and only those modules
             | where you actually use it). This is useful when you don't want to keep typing
             code import Bar from 'foo'
@@ -122,9 +122,24 @@
 
           .title.is-4 The Global Window Object
 
-          .content
-            code window.foo = 'bar'
+          .content 
+            | Since this example app is focused on running from a browser environment, we can also use the browser's
+            | global Window object:
+          
+          pre.block
+            code.hljs.javascript
+              :highlight(lang='javascript')
+                window.Promise = Bluebird
 
+          .content
+            | You could also use Node's global object which Webpack 
+            a(href='https://webpack.js.org/configuration/node/') will automatically convert
+            |  to window if your project is targeted for web (default): 
+
+          pre.block
+            code.hljs.javascript
+              :highlight(lang='javascript')
+                global.Promise = Bluebird
 
     main-footer
 

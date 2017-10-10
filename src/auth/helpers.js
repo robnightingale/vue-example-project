@@ -5,9 +5,6 @@ import auth from './'
 
 const LOGIN_URL = '/auth'
 
-// @TODO: In your real app you should not expose this client secret here.
-// Instead, just pass username/password to your backend server and have your server
-// hold the client secret and pass onto your Oauth server (acting as a middleman).
 // const CLIENT_SECRET = 'ZGVtb2FwcDpkZW1vcGFzcw==' // Base64(client_id:client_secret) "demoapp:demopass"
 
 export default {

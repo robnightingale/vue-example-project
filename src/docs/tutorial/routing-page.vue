@@ -29,9 +29,9 @@
           pre.block
             code.hljs.javascript
               :highlight(lang='javascript')
-                import Vue from 'vue'
-                import Router from 'vue-router'
-                import routes from './routes'
+                import Vue from 'vue';
+                import Router from 'vue-router';
+                import routes from './routes';
 
                 Vue.use(Router)
 
@@ -48,10 +48,7 @@
                   const auth = router.app.$options.store.state.auth
 
                   if (!auth.isLoggedIn) {
-                    next({
-                      path: '/login',
-                      query: { redirect: to.fullPath }
-                    })
+                    next({path: '/login', query: { redirect: to.fullPath }})
                   } else {
                     next()
                   }
@@ -61,42 +58,18 @@
                 * The Router instance containing all the routes for the application.
                 */
                 const router = new Router({
-                  mode: 'history',
+                  base: '/vue-example-project',
+                  mode: 'hash',
                   routes: routes.map(route => ({
                     name: route.name,
                     path: route.path,
-                    component: require(`@/components/${route.component}.vue`),
+                    component: route.component,
                     beforeEnter: route.isPublic ? null : guardRoute
                   }))
                 })
 
                 export default router
 
-                ```
-                **src/router/routes.js**
-
-                ```js
-                /**
-                * Every route becomes a chunk, loaded only when used.
-                * Reduces size of initial App load.
-                */
-
-                export default [
-                  {
-                    name: 'login',
-                    path: '/login',
-                    component: import(/* webpackChunkName: "login" */ '@/components/login/login-page.vue'),
-                    isPublic: true
-                  },
-                  {
-                    name: 'dashboard',
-                    path: '/dashboard',
-                    component: import(/* webpackChunkName: "dashboard" */ '@/components/dashboard/dashboard-page.vue'),
-                    isPublic: false
-                  }
-
-                  // more routes...
-                ]
 
 
           .content
@@ -106,25 +79,30 @@
           pre.block
             code.hljs.javascript
               :highlight(lang='javascript')
+                import docs from '@/docs/routes';
+                import examples from '@/examples/routes';
+
                 /**
                 * Every route becomes a chunk, loaded only when used.
                 * Reduces size of initial App load.
                 */
-
-                export default [
+                const routes = [
                   {
                     name: 'login',
                     path: '/login',
-                    component: import(/* webpackChunkName: "login" */ '@/components/login/login-page.vue'),
+                    component: () => import(/* webpackChunkName: "login" */ '@/features/login/login-page.vue'),
                     isPublic: true
                   },
                   {
-                    name: 'dashboard',
-                    path: '/dashboard',
-                    component: import(/* webpackChunkName: "dashboard" */ '@/components/dashboard/dashboard-page.vue'),
+                    name: 'examples-login',
+                    path: '/examples/login',
+                    component: () => import(/* webpackChunkName: "examples-login" */ '@/examples/login/login-page.vue'),
                     isPublic: true
                   }
                 ]
+
+                export default [...routes, ...docs, ...examples]
+
 
           .title.is-4 Webpack 3 Chunk Naming
 

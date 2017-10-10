@@ -37,6 +37,9 @@
                 strong Clean.
                 |  Organized structure for growing complexity, parts well covered in tutorial, latest tooling such as Pug/Stylus, and more.
               li
+                strong Editor Configuration.
+                |  Get set up with Visual Studio Code or Sublime Text 3.  
+              li
                 strong Security.
                 |  OAuth2, Cookies and CSRF protection.  
               li
@@ -55,7 +58,7 @@
             | The project release numbers serve mainly to indicate that more strategies have been implemented 
             | (or updated as Vue.js evolves) and that more examples
             | have been added. 
-            strong So start using this example right away!
+            strong So clone it and start building your app right away!
 
 
     main-footer
