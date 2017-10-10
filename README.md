@@ -45,72 +45,72 @@ structuring styles, proxying to your backend API server, working in a production
   - What About Node 8?  
   - Install Node and NPM  
 - Vue-Cli  
-  -- Webpack 3 Template  
-  -- Install Vue Cli and a New PWA Project  
+  - Webpack 3 Template  
+  - Install Vue Cli and a New PWA Project  
 - Editors  
-  -- Advantages of VS Code  
-  -- Setting Up VS Code  
-  -- Setting Up Sublime Text 3  
+  - Advantages of VS Code  
+  - Setting Up VS Code  
+  - Setting Up Sublime Text 3  
 - ESLint  
-  -- Configure ESLint  
-  -- ESLint Ignore File  
+  - Configure ESLint  
+  - ESLint Ignore File  
 - Folders and Files  
-  -- Breakdown of all the Folders  
-  -- Component and Page Folder Structure  
-  -- Configure For Your Site's Root Subfolder  
+  - Breakdown of all the Folders  
+  - Component and Page Folder Structure  
+  - Configure For Your Site's Root Subfolder  
 - PWA Configuration  
-  -- Understanding PWA
-  -- The Manifest
-  -- The Service Worker
-  -- The View Port
-  -- Setting Up HTTPS
-  -- Install Banners and Add to Home Screen
+  - Understanding PWA
+  - The Manifest
+  - The Service Worker
+  - The View Port
+  - Setting Up HTTPS
+  - Install Banners and Add to Home Screen
 - Styles
-  -- Install Sass and Stylus
-  -- Load Variables and Functions to All Components
-  -- Overriding Styles in Vendor Components
-  -- Sass Folder Structure
-  -- Stylus Folder Structure
-  -- BEM Methodology
-  -- Use BEM with Scoped in .Vue Files
+  - Install Sass and Stylus
+  - Load Variables and Functions to All Components
+  - Overriding Styles in Vendor Components
+  - Sass Folder Structure
+  - Stylus Folder Structure
+  - BEM Methodology
+  - Use BEM with Scoped in .Vue Files
 - Pug
-  -- Install Pug
+  - Install Pug
 - Understanding Global
-  -- Webpack Evaluates Modules Only Once
-  -- DefinePlugin
-  -- ProvidePlugin
-  -- The Global Window Object
+  - Webpack Evaluates Modules Only Once
+  - DefinePlugin
+  - ProvidePlugin
+  - The Global Window Object
 - UI Frameworks
-  -- Buefy and Bulma
-  -- Twitter Bootstrap 4 and jQuery
-  -- Some Other Great Choices
+  - Buefy and Bulma
+  - Twitter Bootstrap 4 and jQuery
+  - Some Other Great Choices
 - Entry and Polyfills
-  -- What's in the Main Entry?
-  -- Polyfills
+  - What's in the Main Entry?
+  - Polyfills
 - Making API Requests
-  -- Install Axios HTTP Client
-  -- Create Vue Plugin
-  -- Organizing Requests to Backend Server API
-  -- Proxy Api Calls in the Dev Server
-  -- Proxy Api Calls in Nginx Production Server
+  - Install Axios HTTP Client
+  - Create Vue Plugin
+  - Organizing Requests to Backend Server API
+  - Proxy Api Calls in the Dev Server
+  - Proxy Api Calls in Nginx Production Server
 - Routing
-  -- Install VueRouter
-  -- Setup Routing
-  -- Webpack 3 Chunk Naming
+  - Install VueRouter
+  - Setup Routing
+  - Webpack 3 Chunk Naming
 - Vuex
-  -- Install Vuex
-  -- State
-  -- Mutations, Getters, and Actions
-  -- Plugins
-  -- The Index
+  - Install Vuex
+  - State
+  - Mutations, Getters, and Actions
+  - Plugins
+  - The Index
 - Authentication
-  -- Auth Plugin
-  -- Auth Helpers
+  - Auth Plugin
+  - Auth Helpers
 - Testing
-  -- Unit Testing
-  -- End-to-End Testing with Nightwatch and Selenium server
-  -- Running the Tests
+  - Unit Testing
+  - End-to-End Testing with Nightwatch and Selenium server
+  - Running the Tests
 - Dev Tools
-  -- Dev Server
-  -- Vue Dev Tools
-  -- Profiling
+  - Dev Server
+  - Vue Dev Tools
+  - Profiling
