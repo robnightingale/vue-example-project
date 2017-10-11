@@ -1,19 +1,17 @@
 ![Important](/src/assets/images/logo-readme2.svg "Vue Example Project")
 
-# *Vue Example Project*
+## *Vue Example Project*
 ### A clean, scalable, optimized starter PWA Vue.js project and tutorial.
 
 Live Demo: https://www.prograhammer.com/vue-example-project
-
-The live demo is the same as the project you will install. It contains the tutorial and examples.
 
 ## Installation and Tutorial
 
 The installation and tutorial documentation are contained with the project itself, so visit the live demo 
 here: https://www.prograhammer.com/vue-example-project/#/docs.
 
-Note: All the pages in the docs are turned as public, although in your app you will want routes/pages private. See the installation
- instructions for further info.
+Note: All the pages in the docs are turned as public and use route hashing, although in your app you will want routes/pages private
+using route history mode. See installation instructions in the docs link above for more info.
 
 ## Featuring
 
