@@ -16,17 +16,6 @@
           router-link(:to="{ name: 'node'}") this part of the tutorial 
           | first.)
 
-        .title.is-6 Install with Buefy/Bulma UI
-
-        .content
-          a(href='https://buefy.github.io') Buefy
-          |  +  
-          a(href='http://bulma.io') Bulma
-          |  gives you a clean set of Vue Components and CSS to start with (and 
-          strong no jQuery!
-          |  ). Clone the
-          | master branch and install dependencies: 
-
         pre.block
           code.bash
             span.is-unselectable $ 
@@ -35,7 +24,7 @@
             br
             span.is-unselectable $ 
             :highlight(lang='bash')
-              cd example-vue-project
+              cd vue-example-project
             br
             span.is-unselectable $ 
             :highlight(lang='bash')
@@ -44,36 +33,6 @@
             span.is-unselectable $ 
             :highlight(lang='bash')
               npm run dev   # Start dev server at http://localhost:8080.
-
-        .title.is-6 Install with Twitter Bootstrap 4
-
-        .content
-          | To use the latest 
-          a(href='https://buefy.github.io') Twitter Bootstrap 
-          |  , use the bootstrap branch. Clone the
-          | repo and switch to the bootstrap branch. Then install the dependencies: 
-
-        pre.block
-          code.bash
-            span.is-unselectable $ 
-            :highlight(lang='bash')
-              git clone git@github.com:prograhammer/vue-example-project.git   # Clone the repo.
-            br
-            span.is-unselectable $ 
-            :highlight(lang='bash')
-              cd example-vue-project
-            br
-            span.is-unselectable $ 
-            :highlight(lang='bash')
-              git checkout bootstrap  # Switch to Bootstrap branch.
-            br
-            span.is-unselectable $ 
-            :highlight(lang='bash')
-              npm install             # Install dependencies.
-            br
-            span.is-unselectable $ 
-            :highlight(lang='bash')
-              npm run dev             # Start dev server at http://localhost:8080.
 
         .title.is-4 Remove Docs and Examples
 

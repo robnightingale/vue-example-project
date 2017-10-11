@@ -44,13 +44,11 @@
               strong Community Opinionated.  
               |  Open to PR's, suggestions, questions. 
             li
-              | You can choose which UI Framework you want: either 
-              strong Buefy/Bulma on the master branch
-              |  (preferred framework, no jQuery) or 
-              strong Twitter Bootstrap 4 on the bootstrap branch
-              |  (for developers who are still transitioning away from jQuery) with notes how each is configured. See 
-              router-link(v-bind:to="{ name: 'installation' }") Installation 
-              | for more info.
+              | The featured UI Framework is  
+              strong Buefy/Bulma 
+              |  (preferred framework, no jQuery) but instructions for setting up  
+              strong Twitter Bootstrap 4 
+              |  (for developers who are still transitioning away from jQuery) are included in the tutorial
 
         b-message(type='is-warning')
           | The project release numbers serve mainly to indicate that more strategies have been implemented 

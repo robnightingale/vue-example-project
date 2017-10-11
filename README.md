@@ -7,11 +7,11 @@ Live Demo: https://www.prograhammer.com/vue-example-project
 
 ## Installation and Tutorial
 
-The installation and tutorial documentation are contained with the project itself, so visit the live demo 
+The installation and tutorial documentation are contained within the project itself, so visit the docs on the live demo 
 here: https://www.prograhammer.com/vue-example-project/#/docs.
 
-Note: All the pages in the docs are turned as public and use route hashing, although in your app you will want routes/pages private
-using route history mode. See installation instructions in the docs link above for more info.
+Note: All the pages in the docs are set as public and use route hashing, although in your app you will want routes private
+and using history mode. See installation guide in the link above for more info.
 
 ## Featuring
 
@@ -26,12 +26,11 @@ structuring styles, proxying to your backend API server, working in a production
 - **Editor Configuration.** Get set up with Visual Studio Code or Sublime Text 3. 
 - **Security.** OAuth2, Cookies and CSRF protection.  
 - **Community Opinionated.**  Open to PR's, suggestions, questions.
-- You can choose which UI Framework you want: either 
-** Buefy/Bulma on the master branch**
-(preferred framework, no jQuery) or 
-**Twitter Bootstrap 4 on the bootstrap branch**
-(for developers who are still transitioning away from jQuery) with notes how each is configured. See 
-[installation](http://www.prograhammer.com/vue-example-project/#/installation) for more info.
+- The featured UI Framework is 
+** Buefy/Bulma ** (preferred framework, no jQuery) but instructions are included in the tutorial on 
+setting up  
+**Twitter Bootstrap 4**
+(for developers who are still transitioning away from jQuery). 
 
 # Tutorial Table of Contents
 

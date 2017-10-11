@@ -129,7 +129,7 @@
           pre.block
             code.hljs.sass
               :highlight(lang='sass')
-                i@import "~bootstrap/scss/bootstrap"
+                @import "~bootstrap/scss/bootstrap"
 
           .title.is-4 Some Other Great Choices
 
