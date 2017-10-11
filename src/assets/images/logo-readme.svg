@@ -10,12 +10,12 @@
    version="1.1"
    x="0px"
    y="0px"
-   viewBox="0 0 509.62054 90.499443"
+   viewBox="0 0 690.54656 160.28923"
    id="svg4171"
    inkscape:version="0.91 r13725"
    sodipodi:docname="logo-readme.svg"
-   width="509.62054"
-   height="90.499443">
+   width="690.54657"
+   height="160.28923">
   <metadata
      id="metadata4185">
     <rdf:RDF>
@@ -48,8 +48,8 @@
      fit-margin-right="0"
      fit-margin-bottom="0"
      inkscape:zoom="1.654"
-     inkscape:cx="225.76812"
-     inkscape:cy="6.8672518"
+     inkscape:cx="312.68229"
+     inkscape:cy="38.160682"
      inkscape:window-x="0"
      inkscape:window-y="27"
      inkscape:window-maximized="1"
@@ -59,7 +59,7 @@
      id="layer3"
      inkscape:label="background"
      style="display:inline"
-     transform="translate(144.81668,-35.96908)">
+     transform="translate(231.73085,2.527277)">
     <rect
        style="fill:#00bda1;fill-opacity:1;stroke:none;stroke-width:15;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect4144"
@@ -72,7 +72,7 @@
      inkscape:groupmode="layer"
      id="layer4"
      inkscape:label="tagline"
-     transform="translate(-71.402145,-58.871401)"
+     transform="translate(15.512025,-20.375044)"
      style="display:none">
     <g
        transform="translate(-94.457077,13.487307)"
@@ -225,7 +225,7 @@
      id="g4442"
      inkscape:groupmode="layer"
      style="display:none"
-     transform="translate(-71.402145,-58.871401)">
+     transform="translate(15.512025,-20.375044)">
     <flowRoot
        transform="translate(-94.457077,13.487307)"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:2px;word-spacing:0px;fill:#653400;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -244,7 +244,7 @@
      inkscape:groupmode="layer"
      id="layer1"
      inkscape:label="example"
-     transform="translate(5.969334,-17.898272)"
+     transform="translate(92.883504,20.598085)"
      style="display:inline">
     <g
        transform="matrix(1.548731,0,0,1.548731,78.795501,-57.757165)"
@@ -323,7 +323,7 @@
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="rocket"
-     transform="translate(5.969341,-23.33958)"
+     transform="translate(92.883511,15.156777)"
      style="display:inline">
     <path
        style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#e57e93;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:15;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
