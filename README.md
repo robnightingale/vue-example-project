@@ -1,13 +1,11 @@
 
 
-# *Example Vue Project*
+# *Vue Example Project*
 ### A clean, scalable, optimized starter PWA Vue.js project and tutorial.
 
-## The Delicious Live Demo
+# ![Important](/src/assets/images/logo-readme.svg "Vue Example Project")
 
-# ![Important](/src/assets/images/logo-readme.svg "Example Vue Project")
-
-https://www.prograhammer.com/vue-example-project
+Live Demo: https://www.prograhammer.com/vue-example-project
 
 The live demo is the same as the project you will install. It contains the tutorial and examples.
 

@@ -30,85 +30,29 @@
         #navMenuExample.navbar-menu
           .navbar-start
             .navbar-item.has-dropdown.is-hoverable
-              a.navbar-link.is-active(href='/documentation/overview/start/')
+              router-link.navbar-link.is-active(:to="{ name: 'intro' }")
                 | Documentation
               .navbar-dropdown
-                a.navbar-item(href='/documentation/overview/start/')
-                  | Overview
-                a.navbar-item(href='http://bulma.io/documentation/modifiers/syntax/')
-                  | Modifiers
-                a.navbar-item(href='http://bulma.io/documentation/grid/columns/')
-                  | Grid
-                a.navbar-item(href='http://bulma.io/documentation/form/general/')
-                  | Form
-                a.navbar-item(href='http://bulma.io/documentation/elements/box/')
-                  | Elements
-                a.navbar-item.is-active(href='http://bulma.io/documentation/components/breadcrumb/')
-                  | Components
-                a.navbar-item(href='http://bulma.io/documentation/layout/container/')
-                  | Layout
+                router-link.navbar-item(:to="{ name: 'intro' }")
+                  | Intro
+                router-link.navbar-item(:to="{ name: 'installation' }")
+                  | Installation
+                router-link.navbar-item(:to="{ name: 'overview' }")
+                  | Tutorial
+                router-link.navbar-item(:to="{ name: 'more-resources' }")
+                  | More Resources
                 hr.navbar-divider
                 .navbar-item
                   div
                     p.is-size-6-desktop
                       strong.has-text-info 0.5.0
                     small
-                      a.view-all-versions(href='/versions') View all versions
+                      router-link.view-all-versions(:to="{ name: 'more-resources' }") Release Notes
             .navbar-item.has-dropdown.is-hoverable
               a.navbar-link.is-active(href='/documentation/overview/start/')
                 | Examples
               .navbar-dropdown
                 router-link.navbar-item(v-bind:to="{ name: 'examples-login' }") Logins
-            .navbar-item.has-dropdown.is-hoverable
-              a.navbar-link(href='http://bulma.io/blog/')
-                | Advanced
-              #blogDropdown.navbar-dropdown(data-style='width: 18rem;')
-                a.navbar-item(href='/2017/07/24/access-previous-bulma-versions/')
-                  .navbar-content
-                    p
-                      small.has-text-info 24 Jul 2017
-                    p Access previous Bulma versions
-                a.navbar-item(href='/2017/03/10/new-field-element/')
-                  .navbar-content
-                    p
-                      small.has-text-info 10 Mar 2017
-                    p New field element (for better controls)
-                a.navbar-item(href='/2016/04/11/metro-ui-css-grid-with-bulma-tiles/')
-                  .navbar-content
-                    p
-                      small.has-text-info 11 Apr 2016
-                    p Metro UI CSS grid with Bulma tiles
-                a.navbar-item(href='http://bulma.io/blog/')
-                  | More posts
-                hr.navbar-divider
-                .navbar-item
-                  .navbar-content
-                    .level.is-mobile
-                      .level-left
-                        .level-item
-                          strong Stay up to date!
-                      .level-right
-                        .level-item
-                          a.button.is-rss.is-small(href='http://bulma.io/atom.xml')
-                            span.icon.is-small
-                              i.fa.fa-rss
-                            span Subscribe
-            .navbar-item.has-dropdown.is-hoverable
-              .navbar-link
-                | Design
-              #moreDropdown.navbar-dropdown
-                a.navbar-item(href='http://bulma.io/extensions/')
-                  .level.is-mobile
-                    .level-left
-                      .level-item
-                        p
-                          strong Extensions
-                          br
-                          small Side projects to enhance Bulma
-                    .level-right
-                      .level-item
-                        span.icon.has-text-info
-                          i.fa.fa-plug
 
           .navbar-end
             .navbar-item.has-dropdown.is-hoverable
@@ -116,8 +60,8 @@
                 img.my-avatar(src='~/@/assets/images/profile.jpg')
                 | David Graham
               .navbar-dropdown
-                router-link.navbar-item(v-bind:to="{ name: 'installation' }") My Account
-                router-link.navbar-item(v-bind:to="{ name: 'installation' }") Support
+                router-link.navbar-item(v-bind:to="{ name: 'intro' }") My Account
+                router-link.navbar-item(v-bind:to="{ name: 'intro' }") Support
                 hr.navbar-divider
                 a.navbar-item(@click='logout()')
                   b-icon(icon="exit_to_app", style='padding-right: 10px;')

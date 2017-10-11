@@ -1,6 +1,9 @@
 <template lang="pug">
   #app
-    router-view
+    main-nav
+    main
+      router-view
+    main-footer
 </template>
 
 <script>
@@ -11,10 +14,9 @@
 
 <style lang="stylus">
   #app
-    > div
-      display: flex
-      min-height: 100vh
-      flex-direction: column
+    display: flex
+    min-height: 100vh
+    flex-direction: column
     
     main
       // background-color: whitesmoke
