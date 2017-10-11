@@ -1,9 +1,7 @@
-
+![Important](/src/assets/images/logo-readme2.svg "Vue Example Project")
 
 # *Vue Example Project*
 ### A clean, scalable, optimized starter PWA Vue.js project and tutorial.
-
-# ![Important](/src/assets/images/logo-readme2.svg "Vue Example Project")
 
 Live Demo: https://www.prograhammer.com/vue-example-project
 
