@@ -1,5 +1,5 @@
 <template lang="pug">
-  .my-back-nav
+  .my-nav
     .container
       nav.navbar
         .navbar-brand
@@ -30,18 +30,18 @@ export default {
 
 </script>
 
-<style lang="stylus">
+<style lang="stylus" scoped>
   #app
   
-    .my-back-nav
-      background-color: $my-primary
+    .my-nav
+      background-color: $app-primary
       border-bottom: 1px solid rgba(255, 255, 255, 0.5)
 
       .navbar
-        background-color: $my-primary
+        background-color: $app-primary
         
       .navbar-item:hover > a, 
       .navbar-item:hover > .navbar-link,
       .navbar-item:hover .icon > i
-        color: $my-black
+        color: $app-black
 </style>

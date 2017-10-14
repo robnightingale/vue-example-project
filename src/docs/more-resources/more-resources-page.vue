@@ -1,5 +1,5 @@
 <template lang="pug">
-  .my-more-resources-page
+  div
     docs-nav(active-tab='more-resources')
     section.section
       .container

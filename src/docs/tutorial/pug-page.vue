@@ -1,5 +1,5 @@
 <template lang="pug">
-  .my-node-page
+  div
     back-nav(title='Pug')
     section.section
       .container
@@ -88,12 +88,8 @@
 </template>
 
 <script>
-import BackNav from '@/features/common/back-nav'
-
 export default {
   name: 'pug',
-
-  components: { BackNav },
 
   mounted () {
     // @TODO: You don't have to do this if you are using "history" mode in VueRouter.

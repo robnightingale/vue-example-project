@@ -1,13 +1,13 @@
 <template lang="pug">
-  .my-main-nav(v-if="auth.isLoggedIn")
+  .my-nav(v-if="auth.isLoggedIn")
     .container
       nav.navbar
         .navbar-brand
-          router-link.navbar-item.my-brand(v-bind:to="{ name: 'installation' }")
-            img.my-main-nav__logo(src='~/@/assets/images/logo.svg' alt='Vue Example Project')
+          router-link.navbar-item(v-bind:to="{ name: 'installation' }")
+            img(src='~/@/assets/images/logo.svg' alt='Vue Example Project')
           .navbar-item.is-hidden-desktop
             b-dropdown.has-text-dark(position='is-bottom-left')
-              img.my-avatar(slot='trigger' src='~/@/assets/images/profile.jpg')
+              img.app-avatar(slot='trigger' src='~/@/assets/images/profile.jpg')
               b-dropdown-item.has-link
                 router-link.navbar-item(v-bind:to="{ name: 'installation' }") 
                   b-icon(icon='account_circle' style='padding-right: 20px;')
@@ -57,7 +57,7 @@
           .navbar-end
             .navbar-item.has-dropdown.is-hoverable
               .navbar-link
-                img.my-avatar(src='~/@/assets/images/profile.jpg')
+                img.app-avatar(src='~/@/assets/images/profile.jpg')
                 | David Graham
               .navbar-dropdown
                 router-link.navbar-item(v-bind:to="{ name: 'intro' }") My Account
@@ -66,12 +66,34 @@
                 a.navbar-item(@click='logout()')
                   b-icon(icon="exit_to_app", style='padding-right: 10px;')
                   span Logout
+
+    app-menu(v-model='toggleMenu')
+      sub-menu(level='1')
+        .menu-label Apple
+        sub-menu(level='2' slot='content')
+          ul.menu-list
+            li
+              a Fiji
+            li
+              a Gala
+      sub-menu(level='1')
+        .menu-label Peach
+        sub-menu(level='2' slot='content')
+          ul.menu-list
+            li
+              a Fuzz
+            li
+              a Heha
 </template>
 
 <script>
 import auth from '@/auth/helpers'
+import AppMenu from '@/features/common/menu/menu'
+import SubMenu from '@/features/common/menu/sub-menu'
 
 export default {
+  components: { AppMenu, SubMenu },
+
   data () {
     return {
       auth: this.$store.state.auth,
@@ -100,30 +122,30 @@ export default {
 
 </script>
 
-<style lang="stylus">
+<style lang="stylus" scoped>
   #app
   
-    .my-main-nav
-      background-color: $my-primary
+    .my-nav
+      background-color: $app-primary
       border-bottom: 1px solid rgba(255, 255, 255, 0.5)
 
       .navbar
-        background-color: $my-primary
+        background-color: $app-primary
 
       .navbar-item img
         max-height: 36px
 
       .navbar-item > a, 
       .navbar-item > .navbar-link
-        color: $my-white
+        color: $app-white
 
       .navbar-item > .navbar-link::after
-        border-color: $my-white
+        border-color: $app-white
 
       .navbar-item:hover > a, 
       .navbar-item:hover > .navbar-link
-        color: $my-black
+        color: $app-black
 
       .navbar-item:hover > .navbar-link::after
-        border-color: $my-primary
+        border-color: $app-primary
 </style>

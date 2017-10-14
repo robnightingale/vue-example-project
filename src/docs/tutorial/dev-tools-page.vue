@@ -1,5 +1,5 @@
 <template lang="pug">
-  .my-node-page
+  div
     back-nav(title='Dev Tools and Profiling')
     section.section
       .container
@@ -55,12 +55,8 @@
 </template>
 
 <script>
-import BackNav from '@/features/common/back-nav'
-
 export default {
   name: 'http-client',
-
-  components: { BackNav },
 
   mounted () {
     // @TODO: You don't have to do this if you are using "history" mode in VueRouter.

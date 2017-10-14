@@ -7,8 +7,7 @@ import auth from './auth'
 import Buefy from 'buefy'
 import URLSearchParams from 'url-search-params'
 import App from './app'
-import MainNav from './features/common/main/nav'
-import MainFooter from './features/common/main/footer'
+import BackNav from './features/common/back-nav'
 
 Vue.config.productionTip = false
 
@@ -30,8 +29,7 @@ require('./styles/scss/main.scss')
 require('./styles/stylus/main.styl')
 
 // Global Components
-Vue.component('main-nav', MainNav)
-Vue.component('main-footer', MainFooter)
+Vue.component('back-nav', BackNav)
 
 /* eslint-disable no-new */
 new Vue({

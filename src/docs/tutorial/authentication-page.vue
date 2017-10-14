@@ -1,5 +1,5 @@
 <template lang="pug">
-  .my-node-page
+  div
     back-nav(title='Authentication')
     section.section
       .container
@@ -8,7 +8,7 @@
 
         .title.is-4 Auth Plugin
 
-        strong.my-italic src/auth/index.js
+        strong.app-italic src/auth/index.js
         pre.block
           code.hljs.javascript
             :highlight(lang='javascript')
@@ -115,7 +115,7 @@
           | We'll need some helpers so we can do things like login, logout, 
           | or make requests to private endpoints easier.
 
-        strong.my-italic src/auth/index.js
+        strong.app-italic src/auth/index.js
         pre.block
           code.hljs.javascript
             :highlight(lang='javascript')
@@ -224,12 +224,8 @@
 </template>
 
 <script>
-import BackNav from '@/features/common/back-nav'
-
 export default {
   name: 'authentication',
-
-  components: { BackNav },
 
   mounted () {
     // @TODO: You don't have to do this if you are using "history" mode in VueRouter.

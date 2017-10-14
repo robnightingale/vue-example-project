@@ -1,15 +1,19 @@
 <template lang="pug">
   #app
-    main-nav
+    app-nav
     main
       router-view
-    main-footer
+    app-footer
 </template>
 
 <script>
-  export default {
-    name: 'App'
-  }
+import AppNav from '@/features/common/nav'
+import AppFooter from '@/features/common/footer'
+
+export default {
+  name: 'App',
+  components: { AppNav, AppFooter }
+}
 </script>
 
 <style lang="stylus">

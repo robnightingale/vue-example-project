@@ -1,5 +1,5 @@
 <template lang="pug">
-  .my-node-page
+  div
     main
       back-nav(title='UI Frameworks')
       section.section
@@ -71,8 +71,8 @@
             | ) set in the ProvidePlugin and Webpack will automatically load the export of the module.
             |  Add the plugin to the plugins section in both your dev and prod build config files:
 
-          strong.my-italic build/webpack.dev.conf.js
-          strong.my-italic build/webpack.prod.conf.js
+          strong.app-italic build/webpack.dev.conf.js
+          strong.app-italic build/webpack.prod.conf.js
           pre.block
             code.hljs.javascript
               :highlight(lang='javascript')
@@ -93,7 +93,7 @@
             code globals
             |  field:  
 
-          strong.my-italic eslintrc.js
+          strong.app-italic eslintrc.js
           pre.block
             code.hljs.javascript
               :highlight(lang='javascript')
@@ -113,7 +113,7 @@
           .content
             | Now just import Bootstrap into your main entry:  
 
-          strong.my-italic src/main.js
+          strong.app-italic src/main.js
           pre.block
             code.hljs.javascript
               :highlight(lang='javascript')
@@ -153,12 +153,8 @@
 </template>
 
 <script>
-import BackNav from '@/features/common/back-nav'
-
 export default {
   name: 'ui-frameworks',
-
-  components: { BackNav },
 
   mounted () {
     // @TODO: You don't have to do this if you are using "history" mode in VueRouter.

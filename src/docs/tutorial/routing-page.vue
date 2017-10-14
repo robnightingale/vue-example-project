@@ -1,5 +1,5 @@
 <template lang="pug">
-  .my-node-page
+  div
     back-nav(title='Routing')
     section.section
       .container
@@ -24,7 +24,7 @@
           | Let's create a file that will export a new Router instance and also setup a route guard
           | for authenticated routes:  
 
-        strong.my-italic src/router/index.js
+        strong.app-italic src/router/index.js
         pre.block
           code.hljs.javascript
             :highlight(lang='javascript')
@@ -74,7 +74,7 @@
         .content
           | Now the routes:
 
-        strong.my-italic src/router/routes.js
+        strong.app-italic src/router/routes.js
         pre.block
           code.hljs.javascript
             :highlight(lang='javascript')
@@ -107,7 +107,7 @@
 
         .content With Webpack 3 we can give names to the chunks created from the routes:  
 
-        strong.my-italic webpack.prod.conf.js
+        strong.app-italic webpack.prod.conf.js
         pre.block
           code.hljs.javascript
             :highlight(lang='javascript')
@@ -121,12 +121,8 @@
 </template>
 
 <script>
-import BackNav from '@/features/common/back-nav'
-
 export default {
   name: 'routing',
-
-  components: { BackNav },
 
   mounted () {
     // @TODO: You don't have to do this if you are using "history" mode in VueRouter.

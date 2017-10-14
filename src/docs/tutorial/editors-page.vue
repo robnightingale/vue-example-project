@@ -1,5 +1,5 @@
 <template lang="pug">
-  .my-node-page
+  div
     back-nav(title='Editors')
     section.section
       .container
@@ -68,7 +68,7 @@
             | recommended extensions for a project.
 
         
-        strong.my-italic .vscode/settings.json 
+        strong.app-italic .vscode/settings.json 
         pre.block
           code.hljs.javascript
             :highlight(lang='javascript')
@@ -119,7 +119,7 @@
                   }
               }
 
-        strong.my-italic .vscode/extensions.json 
+        strong.app-italic .vscode/extensions.json 
         pre.block
           code.hljs.javascript
             :highlight(lang='javascript')
@@ -144,7 +144,7 @@
           | a link under the search bar 
           code 
             | For advanced customizations open and edit 
-            span.my-underline keybindings.json
+            span.app-underline keybindings.json
             | .
           | This will open up a .json file for you to add bindings and you'll see a list of defaults 
           | open in a tab to your left called "Default Keybindings".
@@ -156,7 +156,7 @@
           code ctrl+d 
           | to duplicate a line downwards:  
 
-        strong.my-italic ~/.config/Code/User/keybindings.json
+        strong.app-italic ~/.config/Code/User/keybindings.json
         pre.block
           code.hljs.javascript
             :highlight(lang='javascript')
@@ -285,12 +285,8 @@
 </template>
 
 <script>
-import BackNav from '@/features/common/back-nav'
-
 export default {
   name: 'editors',
-
-  components: { BackNav },
 
   mounted () {
     // @TODO: You don't have to do this if you are using "history" mode in VueRouter.

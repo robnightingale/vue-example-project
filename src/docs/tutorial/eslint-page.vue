@@ -1,5 +1,5 @@
 <template lang="pug">
-  .my-node-page
+  div
     back-nav(title='ESLint')
     section.section
       .container
@@ -23,7 +23,7 @@
           code eslintrc.js 
           | file and you'll see what Vue cli generated for this project:
 
-        strong.my-italic eslintrc.js 
+        strong.app-italic eslintrc.js 
         pre.block
           code.hljs.javascript
             :highlight(lang='javascript')
@@ -81,7 +81,7 @@
           code .eslintignore 
           | file in your project’s root directory: 
 
-        strong.my-italic .eslintignore
+        strong.app-italic .eslintignore
         pre.block
           code.hljs
             :highlight
@@ -91,12 +91,8 @@
 </template>
 
 <script>
-import BackNav from '@/features/common/back-nav'
-
 export default {
   name: 'editors',
-
-  components: { BackNav },
 
   mounted () {
     // @TODO: You don't have to do this if you are using "history" mode in VueRouter.

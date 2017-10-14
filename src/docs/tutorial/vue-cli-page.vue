@@ -1,5 +1,5 @@
 <template lang="pug">
-  .my-node-page
+  div
     main
       back-nav(title='Vue-Cli')
       section.section
@@ -37,12 +37,8 @@
 </template>
 
 <script>
-import BackNav from '@/features/common/back-nav'
-
 export default {
   name: 'vue-cli',
-
-  components: { BackNav },
 
   mounted () {
     // @TODO: You don't have to do this if you are using "history" mode in VueRouter.

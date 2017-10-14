@@ -1,5 +1,5 @@
 <template lang="pug">
-  .my-node-page
+  div
     back-nav(title='Entry and Polyfills')
     section.section
       .container
@@ -11,7 +11,7 @@
         .content
           | The main entry point for the application:  
 
-        strong.my-italic src/main.js
+        strong.app-italic src/main.js
         pre.block
           code.hljs.javascript
             :highlight(lang='javascript')
@@ -65,12 +65,8 @@
 </template>
 
 <script>
-import BackNav from '@/features/common/back-nav'
-
 export default {
   name: 'main-entry',
-
-  components: { BackNav },
 
   mounted () {
     // @TODO: You don't have to do this if you are using "history" mode in VueRouter.

@@ -1,25 +1,24 @@
 <template lang="pug">
-  .my-login
-    .hero.is-fullheight.is-primary
-      .hero-body
-        .container.has-text-centered
-          .columns.is-centered
-            .column.is-one-third
-              img.my-login__logo(src='~/@/assets/images/logo.svg' alt='Vue Example Project')
-              .is-clearfix
-              .my-subtitle(style='padding-top: 15px; padding-bottom: 15px;') Sign in for more sweetness.
-              .card
-                .card-content.has-text-left
-                  h1.title.has-text-dark.has-text-centered
-                    img.my-avatar(src='~/@/assets/images/profile.jpg' alt='Avatar')
-                    
-                  b-field(label='Email')
-                    // Update below to type='email' for email validation
-                    b-input(type='text' v-model='credentials.username' icon="email" @click.native='logout()')
-                  b-field(label='Password')
-                    b-input(type='password' v-model='credentials.password' icon='vpn_key' password-reveal)
-                  a.button.is-secondary.is-fullwidth(:class="{ 'is-loading': isLoading }" @click="submit")
-                    |Sign In
+  .hero.is-fullheight.is-primary
+    .hero-body
+      .container.has-text-centered
+        .columns.is-centered
+          .column.is-one-third
+            img.my-logo(src='~/@/assets/images/logo.svg' alt='Vue Example Project')
+            .is-clearfix
+            .my-subtitle(style='padding-top: 15px; padding-bottom: 15px;') Start your project off with a boost.
+            .card
+              .card-content.has-text-left
+                h1.title.has-text-dark.has-text-centered
+                  img.app-avatar(src='~/@/assets/images/profile.jpg' alt='Avatar')
+                  
+                b-field(label='Email')
+                  // Update below to type='email' for email validation
+                  b-input(type='text' v-model='credentials.username' icon="email" @click.native='logout()')
+                b-field(label='Password')
+                  b-input(type='password' v-model='credentials.password' icon='vpn_key' password-reveal)
+                a.button.is-secondary.is-fullwidth(:class="{ 'is-loading': isLoading }" @click="submit")
+                  |Sign In
 </template>
 
 <script>
@@ -61,12 +60,10 @@
   }
 </script>
 
-<style lang="stylus">
+<style lang="stylus" scoped>
   #app
 
-    .my-login
-
-      &__logo
-        max-width: 300px
+    .my-logo
+      max-width: 300px
 
 </style>

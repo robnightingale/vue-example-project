@@ -1,5 +1,5 @@
 <template lang="pug">
-  .my-node-page
+  div
     back-nav(title='Styles')
     section.section
       .container
@@ -32,7 +32,7 @@
           code return 
           | statement here:  
 
-        strong.my-italic build/utils.js
+        strong.app-italic build/utils.js
         pre.block
           code.hljs.javascript
             :highlight(lang='javascript')
@@ -85,7 +85,7 @@
           | Collect all your Sass files and arranges them in the correct loading order you want. 
           | (For example, variables would be loaded first):  
 
-        strong.my-italic src/styles/sass/main.scss
+        strong.app-italic src/styles/sass/main.scss
         pre.block
           code.hljs.sass
             :highlight(lang='sass')
@@ -127,7 +127,7 @@
           | Collect all your Stylus files and arranges them in the correct loading order you want. 
           | (For example, variables would be loaded first): 
 
-        strong.my-italic src/styles/stylus/main.styl
+        strong.app-italic src/styles/stylus/main.styl
         pre.block
           code.hljs.sass
             :highlight(lang='stylus')
@@ -140,7 +140,7 @@
         .content
           | Finally, bring these files into your main project entry point:  
 
-        strong.my-italic src/main.js
+        strong.app-italic src/main.js
         pre.block
           code.hljs.javascript
             :highlight(lang='javascript')
@@ -159,7 +159,7 @@
 
         .title.is-6 This is BEM   
 
-        strong.my-italic CSS
+        strong.app-italic CSS
         pre.block
           code.hljs.css
             :highlight(lang='css')
@@ -173,7 +173,7 @@
               .btn--orange {} 
               .btn--big {}
 
-        strong.my-italic HTML
+        strong.app-italic HTML
         pre.block
           code.hljs.html
             :highlight(lang='html')
@@ -184,7 +184,7 @@
 
         .title.is-6 Example With Stylus and Pug
 
-        strong.my-italic Stylus
+        strong.app-italic Stylus
         pre.block
           code.hljs.stylus
             :highlight(lang='stylus')
@@ -219,7 +219,7 @@
                   &--avatar
                     border-radius: 50%
 
-        strong.my-italic Pug
+        strong.app-italic Pug
         pre.block
           code.hljs.stylus
             :highlight(lang='stylus')
@@ -233,7 +233,7 @@
 
         .title.is-6 Don't do this
 
-        strong.my-italic CSS
+        strong.app-italic CSS
         pre.block
           code.hljs.stylus
             :highlight(lang='stylus')
@@ -250,7 +250,7 @@
           | or even for selectors underneath scoping BEM classes (and sometimes you have
           | to do to access vendor components) :  
 
-        strong.my-italic Stylus
+        strong.app-italic Stylus
         pre.block
           code.hljs.stylus
             :highlight(lang='stylus')
@@ -290,12 +290,8 @@
 </template>
 
 <script>
-import BackNav from '@/features/common/back-nav'
-
 export default {
   name: 'styles',
-
-  components: { BackNav },
 
   mounted () {
     // @TODO: You don't have to do this if you are using "history" mode in VueRouter.

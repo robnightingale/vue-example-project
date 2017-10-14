@@ -56,10 +56,10 @@
               |  This is where all of your pages/components and their supporting code will go.
             li
               code /docs
-              span.my-italic  <-- remove
+              span.app-italic  <-- remove
             li
               code /examples
-              span.my-italic  <-- remove
+              span.app-italic  <-- remove
 
         .title.is-6 Remove Routes
 
@@ -68,7 +68,7 @@
           code router/routes.js 
           | you need to remove the docs and examples import and export so that your updated routes file looks like this:
 
-        strong.my-italic src/router/routes.js
+        strong.app-italic src/router/routes.js
         pre.block
           code.hljs.javascript
             :highlight(lang='javascript')
@@ -98,10 +98,10 @@
           ul
             li 
               code "highlight.js": "^9.12.0"
-              .my-italic  For highlighting code snippets.
+              .app-italic  For highlighting code snippets.
             li  
               code "jstransformer-highlight": "^1.0.1",
-              .my-italic  Highlight.js 
+              .app-italic  Highlight.js 
                 a(href='https://www.npmjs.com/browse/keyword/jstransformer') jstransformer 
                 | used as a 
                 a(href='https://pugjs.org/language/filters.html') Pug Filter.
@@ -110,7 +110,7 @@
           | Examples Packages
           ul
             li 
-              span.my-italic There are no extra packages currently used (more examples to be added soon though).
+              span.app-italic There are no extra packages currently used (more examples to be added soon though).
 
 </template>
 

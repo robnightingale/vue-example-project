@@ -1,5 +1,5 @@
 <template lang="pug">
-  .my-node-page
+  div
     main
       back-nav(title='Vuex')
       section.section
@@ -26,7 +26,7 @@
 
           .title.is-4 State
 
-          strong.my-italic src/vuex/state.js
+          strong.app-italic src/vuex/state.js
           pre.block
             code.hljs.javascript
               :highlight(lang='javascript')
@@ -85,7 +85,7 @@
 
           .content Now create a file to hold all the methods that will change the state in our Vuex store:
 
-          strong.my-italic src/vuex/mutations.js
+          strong.app-italic src/vuex/mutations.js
           pre.block
             code.hljs.javascript
               :highlight(lang='javascript')
@@ -153,7 +153,7 @@
 
           .content And some getters (although you can accesss the Vuex state directly as we'll see shortly):
 
-          strong.my-italic src/vuex/getters.js
+          strong.app-italic src/vuex/getters.js
           pre.block
             code.hljs.javascript
               :highlight(lang='javascript')
@@ -163,7 +163,7 @@
 
           .content And some getters (although you can accesss the Vuex state directly as we'll see shortly):
 
-          strong.my-italic src/vuex/plugins.js
+          strong.app-italic src/vuex/plugins.js
           pre.block
             code.hljs.javascript
               :highlight(lang='javascript')
@@ -196,7 +196,7 @@
 
           .content And bring it all together in the index.js file:
 
-          strong.my-italic src/vuex/plugins.js
+          strong.app-italic src/vuex/plugins.js
           pre.block
             code.hljs.javascript
               :highlight(lang='javascript')
@@ -235,12 +235,8 @@
 </template>
 
 <script>
-import BackNav from '@/features/common/back-nav'
-
 export default {
   name: 'vuex',
-
-  components: { BackNav },
 
   mounted () {
     // @TODO: You don't have to do this if you are using "history" mode in VueRouter.

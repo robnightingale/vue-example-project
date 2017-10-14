@@ -1,5 +1,5 @@
 <template lang="pug">
-  .my-node-page
+  div
     back-nav(title='Understanding Global')
     section.section
       .container
@@ -64,7 +64,7 @@
         .content
           | Create any module (for example, a global set of utilities would be handy):
 
-        strong.my-italic utils.js
+        strong.app-italic utils.js
         pre.block
           code.hljs.javascript
             :highlight(lang='javascript')
@@ -78,7 +78,7 @@
         .content
           | Then alias the module and add to ProvidePlugin:
 
-        strong.my-italic webpack.config.js
+        strong.app-italic webpack.config.js
         pre.block
           code.hljs.javascript
             :highlight(lang='javascript')
@@ -143,12 +143,8 @@
 </template>
 
 <script>
-import BackNav from '@/features/common/back-nav'
-
 export default {
   name: 'global',
-
-  components: { BackNav },
 
   mounted () {
     // @TODO: You don't have to do this if you are using "history" mode in VueRouter.

@@ -1,5 +1,5 @@
 <template lang="pug">
-  .my-node-page
+  div
     back-nav(title='Folders and Files')
     section.section
       .container
@@ -92,7 +92,7 @@
           | Consider how much nicer it is to keep context in your head looking at a folder like this: 
           
         .content
-          strong.my-italic Folder structure with more "vertical slicing"
+          strong.app-italic Folder structure with more "vertical slicing"
         pre.block
           code.hljs.bash
             :highlight(lang='bash')
@@ -138,7 +138,7 @@
         .content
           | Update the base of your router:  
 
-        strong.my-italic src/router/index.js
+        strong.app-italic src/router/index.js
         pre.block
           code.hljs.bash
             :highlight(lang='bash')
@@ -163,7 +163,7 @@
         .content
           | Update your build config's assetsPublicPath:  
 
-        strong.my-italic build/config/index.js
+        strong.app-italic build/config/index.js
         pre.block
           code.hljs.bash
             :highlight(lang='bash')
@@ -185,7 +185,7 @@
           code assetsPublicPath
           |  here. So as a work-around we can just add another proxy rule:   
 
-        strong.my-italic build/config/index.js
+        strong.app-italic build/config/index.js
         pre.block
           code.hljs.bash
             :highlight(lang='bash')
@@ -206,12 +206,8 @@
 </template>
 
 <script>
-import BackNav from '@/features/common/back-nav'
-
 export default {
   name: 'folders-and-files',
-
-  components: { BackNav },
 
   mounted () {
     // @TODO: You don't have to do this if you are using "history" mode in VueRouter.

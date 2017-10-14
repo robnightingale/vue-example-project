@@ -1,5 +1,5 @@
 <template lang="pug">
-  .my-node-page
+  div
     back-nav(title='Unit and End-to-End Testing')
     section.section
       .container
@@ -22,7 +22,7 @@
         .content
           | Then update your karma config file to include the polyfill:
 
-        strong.my-italic test/unit/karma.conf.js
+        strong.app-italic test/unit/karma.conf.js
         pre.block
           code.hljs.javascript
             :highlight(lang='javascript')
@@ -37,7 +37,7 @@
           | A unit test is included from the Webpack template already. It's a simple example
           | that tests the content outputted from the Hello vue component:
 
-        strong.my-italic test/unit/specs/Hello.spec.js
+        strong.app-italic test/unit/specs/Hello.spec.js
         pre.block
           code.hljs.javascript
             :highlight(lang='javascript')
@@ -66,7 +66,7 @@
           | it will no longer work with the changes we have made. Let's add a new test
           | that tests that our login form works and that we can reach the dashboard:
 
-        strong.my-italic test/e2e/specs/loginTest.js
+        strong.app-italic test/e2e/specs/loginTest.js
         pre.block
           code.hljs.javascript
             :highlight(lang='javascript')
@@ -146,12 +146,8 @@
 </template>
 
 <script>
-import BackNav from '@/features/common/back-nav'
-
 export default {
   name: 'http-client',
-
-  components: { BackNav },
 
   mounted () {
     // @TODO: You don't have to do this if you are using "history" mode in VueRouter.

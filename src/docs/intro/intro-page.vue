@@ -1,5 +1,5 @@
 <template lang="pug">
-  .my-intro-page
+  div
     docs-nav(active-tab='intro')
     section.section
       .container

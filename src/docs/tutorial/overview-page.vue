@@ -1,5 +1,5 @@
 <template lang="pug">
-  .my-overview-page
+  div
     docs-nav(active-tab='tutorial')
     section.section
       .container

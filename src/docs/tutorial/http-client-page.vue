@@ -1,5 +1,5 @@
 <template lang="pug">
-  .my-node-page
+  div
     back-nav(title='Making API Requests')
     section.section
       .container
@@ -26,7 +26,7 @@
           code this.$http 
           | calls using Axios:
 
-        strong.my-italic http/index.js
+        strong.app-italic http/index.js
         pre.block
           code.hljs.javascript
             :highlight(lang='javascript')
@@ -51,7 +51,7 @@
           code getFriends
           | :
 
-        strong.my-italic http/api.js
+        strong.app-italic http/api.js
         pre.block
           code.hljs.javascript
             :highlight(lang='javascript')
@@ -81,7 +81,7 @@
           code build/dev-server.js
           | this line:
 
-        strong.my-italic build/dev-server.js
+        strong.app-italic build/dev-server.js
         pre.block
           code.hljs.javascript
             :highlight(lang='javascript')
@@ -105,7 +105,7 @@
           strong proxyTable 
           | object to look like this:
 
-        strong.my-italic config/index.js
+        strong.app-italic config/index.js
         pre.block
           code.hljs.javascript
             :highlight(lang='javascript')
@@ -158,12 +158,8 @@
 </template>
 
 <script>
-import BackNav from '@/features/common/back-nav'
-
 export default {
   name: 'http-client',
-
-  components: { BackNav },
 
   mounted () {
     // @TODO: You don't have to do this if you are using "history" mode in VueRouter.
