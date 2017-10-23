@@ -1,5 +1,5 @@
 <template lang="pug">
-  .my-nav(v-if="auth.isLoggedIn")
+  .my-nav(v-if="auth.isLoggedIn" v-show="$store.state.nav === true")
     .container
       nav.navbar
         .navbar-brand
@@ -67,32 +67,52 @@
                   b-icon(icon="exit_to_app", style='padding-right: 10px;')
                   span Logout
 
-    app-menu(v-model='toggleMenu')
-      sub-menu(level='1')
-        .menu-label Apple
-        sub-menu(level='2' slot='content')
-          ul.menu-list
-            li
-              a Fiji
-            li
-              a Gala
-      sub-menu(level='1')
-        .menu-label Peach
-        sub-menu(level='2' slot='content')
-          ul.menu-list
-            li
-              a Fuzz
-            li
-              a Heha
+    side-nav(v-model='toggleMenu')
+      .top-box(style='background-color: #424242; color: white; margin-left: -12px; margin-right: -12px; margin-top: -12px; margin-bottom: 12px; padding-top: 24px; padding-left: 12px; padding-right: 12px;')
+        img.app-avatar(src='~/@/assets/images/profile.jpg' style='width: 60px;')
+        br
+        br
+        side-nav-item(:icon='false' style='padding-left: -32px;') David Graham
+          div(slot='sub-items')
+            | todo
+
+      side-nav-item(header) Documentation Test Stuff
+        b-icon(slot='left-icon' icon='library_books')
+        div(slot='sub-items')
+          side-nav-item(:routeTo='{ name: "intro" }') Intro
+          side-nav-item(:routeTo='{ name: "installation" }') installation
+          side-nav-item Bar
+      side-nav-item(header) Documentation
+        b-icon(slot='left-icon' icon='library_books')
+        div(slot='sub-items')
+          side-nav-item Intro
+          side-nav-item Foo
+          side-nav-item Bar
+          side-nav-item Intro
+          side-nav-item Foo
+          side-nav-item Bar
+          side-nav-item Intro
+          side-nav-item Foo
+          side-nav-item Bar
+          side-nav-item Intro
+          side-nav-item Foo
+          side-nav-item Bar
+          side-nav-item Intro
+          side-nav-item Foo
+          side-nav-item Bar
+          side-nav-item Intro
+          side-nav-item Foo
+          side-nav-item Bar
+          
 </template>
 
 <script>
 import auth from '@/auth/helpers'
-import AppMenu from '@/features/common/menu/menu'
-import SubMenu from '@/features/common/menu/sub-menu'
+import SideNav from '@/features/common/side-nav/nav'
+import SideNavItem from '@/features/common/side-nav/item'
 
 export default {
-  components: { AppMenu, SubMenu },
+  components: { SideNav, SideNavItem },
 
   data () {
     return {

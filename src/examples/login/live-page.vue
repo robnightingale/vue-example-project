@@ -4,7 +4,10 @@
       .container.has-text-centered
         .columns.is-centered
           .column.is-one-third
-            img.my-logo(src='~/@/assets/images/logo.svg' alt='Vue Example Project')
+            .my-logo
+              img(src='~/@/assets/images/logo.svg' alt='Vue Example Project')
+              div Vue Example
+              .my-spacer
             .is-clearfix
             .my-subtitle(style='padding-top: 15px; padding-bottom: 15px;') Start your project off with a boost.
             .card
@@ -64,6 +67,21 @@
   #app
 
     .my-logo
-      max-width: 300px
+      display: flex
+      width: 100%
+      justify-content: center
+      align-items: center
+
+      img 
+        height: 10vh
+
+      div
+        display: inline
+        white-space: nowrap
+        font-size: 5vh
+        font-weight: 800
+
+      .my-spacer
+        width: 10vh
 
 </style>

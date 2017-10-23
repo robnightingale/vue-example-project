@@ -1,13 +1,18 @@
 <template lang="pug">
-  .my-side-menu
+  div
     transition(name='slide')
-      .my-content(v-show='value')
+      .my-menu(v-show='value')
         slot
-    .my-overlay(v-show='value' @click="$emit('input', false)")
+    .my-overlay(v-show='value' @click="close()")
 </template>
 
 <script>
+import Provide from '@/features/common/mixins/provide.js'
+
 export default {
+  name: 'sideNav',
+
+  mixins: [Provide],
 
   props: {
     value: {
@@ -16,37 +21,36 @@ export default {
     }
   },
 
+  watch: {
+    value (val) {
+      val ? this.open() : this.close()
+    }
+  },
+
   data () {
     return {
-      levels: {
-        '1': null,
-        '2': null,
-        '3': null   // <-- Max number of levels explicitly set here for reactivity.
+      // Data provided to all Vue descendents. See "Provide" mixin above.
+      provide: {
+        close: () => { this.close() }
       }
     }
   },
 
-  // See Vue documentation at https://vuejs.org/v2/api/#provide-inject.
-  provide () {
-    const levels = {}
-    return { levels: this.makeReactive(levels, this.levels) }
-  },
-
   methods: {
-    // Hooks a provider up with a reactive source, so the provider is reactive.
-    // See https://vuejs.org/v2/guide/reactivity.html#How-Changes-Are-Tracked.
-    makeReactive (target, source) {
-      for (let i = 1; i <= Object.keys(source).length; i++) {
-        let prop = i.toString()
+    open () {
+      // Lock background scrolling.
+      document.documentElement.classList.add('app-noscroll')
+      document.body.classList.add('app-noscroll')
 
-        Object.defineProperty(target, prop, {
-          enumerable: true,
-          get: () => source[prop],
-          set: (val) => { source[prop] = val }
-        })
-      }
+      this.$emit('input', true)
+    },
 
-      return target
+    close () {
+      // Unlock background scrolling.
+      document.documentElement.classList.remove('app-noscroll')
+      document.body.classList.remove('app-noscroll')
+
+      this.$emit('input', false)
     }
   }
 }
@@ -66,13 +70,14 @@ export default {
       background-color: #212121
       opacity: .46
 
-    .my-content
+    .my-menu
       position: fixed
       z-index: 104
       bottom: 0
       top: 0
-      width: 264px
-      background: white
+      width: 280px
+      background-color: white
+      font-size: 14px
       overflow-x: hidden
       overflow-y: auto
       -webkit-overflow-scrolling: touch
@@ -86,7 +91,7 @@ export default {
       transition: all .3s ease
 
     .slide-enter, .slide-leave-to
-      transform: translateX(-265px)
+      transform: translateX(-281px)
 
     .slide-enter-to, .slide-leave
       transform: translateX(0)

@@ -27,6 +27,7 @@ function initializeState () {
   }
 
   const notSyncedState = {
+    nav: true
   }
 
   // Sync with local storage.

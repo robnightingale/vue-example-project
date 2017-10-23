@@ -62,7 +62,10 @@
           |  as global here. 
 
         .content
-          | Create any module (for example, a global set of utilities would be handy):
+          | Create any module, for example, a global set of utilities would be handy
+          | (module must be in Nodejs 
+          code module.exports 
+          |  format):
 
         strong.app-italic utils.js
         pre.block
@@ -76,38 +79,54 @@
               }
 
         .content
-          | Then alias the module and add to ProvidePlugin:
+          | First alias the module:
 
-        strong.app-italic webpack.config.js
+        strong.app-italic webpack.base.config.js
         pre.block
           code.hljs.javascript
             :highlight(lang='javascript')
-              var webpack = require("webpack");
-              var path = require("path");
-
               // ...
 
+              resolve: {
+                extensions: ['.js', '.vue', '.json'],
+                alias: {
+                  '@': resolve('src'),
+                  'utils': path.resolve(__dirname, '../utils/utils.js')
+                },
+                symlinks: false
+              },
+
+        .content
+          | Then add the ProvidePlugin to your plugins array in both dev and prod:
+
+        strong.app-italic webpack.dev.config.js
+        strong.app-italic webpack.prod.config.js
+        pre.block
+          code.hljs.javascript
+            :highlight(lang='javascript')
+              plugins: [
+                
+                // ...
+
+                new webpack.ProvidePlugin({
+                  'utils': 'utils'
+                })
+              ]
+
+        .content
+          | Don't forget to tell the linter about this global:
+
+        strong.app-italic eslintrc.js
+        pre.block
+          code.hljs.javascript
+            :highlight(lang='javascript')
               module.exports = {
 
                 // ...
 
-                resolve: {
-                  extensions: ['', '.js'],
-                  alias: {
-                    'utils': path.resolve(__dirname, './utils')  // <-- When you build or restart dev-server, you'll get an error if path is incorrect.
-                  }
+                globals: {
+                  'utils': true
                 },
-
-                plugins: [
-
-                  // ...
-
-                  new webpack.ProvidePlugin({
-                    'utils': 'utils'
-                  })
-                ]  
-
-              }
 
         .content
           | Now just call 

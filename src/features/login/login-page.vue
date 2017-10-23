@@ -7,6 +7,7 @@
             .my-logo
               img(src='~/@/assets/images/logo.svg' alt='Vue Example Project')
               div Vue Example
+              .my-spacer
             .is-clearfix
             .my-subtitle(style='padding-top: 15px; padding-bottom: 15px;') Start your project off with a boost.
             .card
@@ -80,5 +81,8 @@
         white-space: nowrap
         font-size: 5vh
         font-weight: 800
+
+      .my-spacer
+        width: 10vh
 
 </style>

@@ -21,6 +21,17 @@ export const UPDATE_USER = (state, user) => {
 }
 
 /**
+ * Show or hide the top app navbar.
+ *
+ * @param  {state} state The full existing data we have stored in Vuex.
+ * @param  {user}  el  The element of the new active side-nav item.
+ * @return {void}
+ */
+export const SHOW_NAV = (state, show) => {
+  state.nav = show
+}
+
+/**
  * Clear each property, one by one, so reactivity still works.
  *
  * @param  {state} state  The full existing data we have stored in Vuex.

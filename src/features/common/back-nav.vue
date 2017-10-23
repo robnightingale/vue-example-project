@@ -23,6 +23,14 @@ export default {
     }
   },
 
+  mounted () {
+    this.$store.commit('SHOW_NAV', false)
+  },
+
+  beforeDestroy () {
+    this.$store.commit('SHOW_NAV', true)
+  },
+
   methods: {
 
   }
