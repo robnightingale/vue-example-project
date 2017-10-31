@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import routes from './routes'
+import store from '@/store'
 
 Vue.use(Router)
 
@@ -33,7 +34,22 @@ const router = new Router({
     name: route.name,
     path: route.path,
     component: route.component,
-    beforeEnter: route.isPublic ? null : guardRoute
+    beforeEnter: (to, from, next) => {
+      // Setup some per-page stuff.
+      document.title = route.title
+      store.commit('UPDATE_PAGE', Object.assign(store.state.page, {
+        title: route.title,
+        layout: route.layout || 'LayoutDefault'
+      }))
+      store.commit('UPDATE_APPBAR', Object.assign(store.state.appbar, {
+        title: route.title
+      }))
+
+      // Auth navigation guard.
+      if (!route.isPublic) return guardRoute(to, from, next)
+
+      next()
+    }
   }))
 })
 

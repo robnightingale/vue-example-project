@@ -1,10 +1,10 @@
 import Vue from 'vue'
 import router from './router'
-import store from './vuex'
+import store from './store'
 import { sync } from 'vuex-router-sync'
 import http from './http'
 import auth from './auth'
-import Buefy from 'buefy'
+import Vuetify from 'vuetify'
 import URLSearchParams from 'url-search-params'
 import App from './app'
 import BackNav from './features/common/back-nav'
@@ -21,8 +21,8 @@ sync(store, router)
 Vue.use(http)
 Vue.use(auth)
 
-// Buefy/Bulma UI Framework.
-Vue.use(Buefy)
+// Vuetify
+Vue.use(Vuetify)
 
 // Styles
 require('./styles/scss/main.scss')

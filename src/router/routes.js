@@ -10,6 +10,8 @@ const routes = [
     name: 'login',
     path: '/login',
     component: () => import(/* webpackChunkName: "login" */ '@/features/login/login-page.vue'),
+    title: 'Login',
+    layout: 'LayoutNoAuth',
     isPublic: true
   }
 ]

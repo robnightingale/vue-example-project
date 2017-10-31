@@ -51,8 +51,20 @@ exports.cssLoaders = function (options) {
     less: generateLoaders('less'),
     sass: generateLoaders('sass', { indentedSyntax: true }),
     scss: generateLoaders('sass'),
-    stylus: generateLoaders('stylus', { preferPathResolver: 'webpack', import: ['~@/styles/stylus/utils/utils.styl'] }),
-    styl: generateLoaders('stylus', { preferPathResolver: 'webpack', import: ['~@/styles/stylus/utils/utils.styl'] })
+    stylus: generateLoaders('stylus', { 
+      preferPathResolver: 'webpack', 
+      import: [
+        '~@/styles/stylus/1-settings/1-settings.styl', // <-- Load these files into every stylus file.
+        '~@/styles/stylus/2-tools/2-tools.styl',       //     Only variables/functions so output CSS is not increased.
+      ] 
+    }),
+    styl: generateLoaders('stylus', { 
+      preferPathResolver: 'webpack', 
+      import: [
+        '~@/styles/stylus/1-settings/1-settings.styl', // <-- Load these files into every stylus file.
+        '~@/styles/stylus/2-tools/2-tools.styl',       //     Only variables/functions so output CSS is not increased.
+      ] 
+    })
   }
 }
 

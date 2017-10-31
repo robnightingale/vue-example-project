@@ -1,0 +1,17 @@
+// This is an example of a global CSS-only component.
+// (Vue component styles are typically scoped and kept inside .vue files from the /features folder)
+// (CSS-only component styles that are more specific to a feature can be kept somewhere in /features)
+
+.app  // <-- Prefix for global (unscoped) styles.
+
+  &-content
+    font-size: 16px
+    font-weight: 400
+    max-width: 100%
+    margin-bottom: 16px
+
+    // &__some-child
+    //   ...
+
+    // &--some-modifier
+    //   ...

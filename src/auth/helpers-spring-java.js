@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import router from '@/router'
-import store from '@/vuex'
+import store from '@/store'
 import auth from './'
 
 const LOGIN_URL = '/auth'

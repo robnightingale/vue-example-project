@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import store from '@/vuex'
+import store from '@/store'
 import axios from 'axios'
 
 const API_BASE_URL = '/api'

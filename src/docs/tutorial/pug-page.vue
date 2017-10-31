@@ -15,7 +15,10 @@
               npm install pug@2.0.0-rc.4 pug-loader --save-dev
 
         b-message(type='is-info')
-          | Here is a handy online tool to convert any HTML examples into Pug   
+          | You can find a handy Chrome extension that let's you select html
+          | then right-click and copy as Jade/Pug.
+          br
+          | I also found this online tool:   
           | (check both boxes: "Bodyless" and "No commas in attributes"):
           br
           a(href='https://html2pug.herokuapp.com/') https://html2pug.herokuapp.com/

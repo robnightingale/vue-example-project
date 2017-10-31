@@ -27,7 +27,16 @@ function initializeState () {
   }
 
   const notSyncedState = {
-    nav: true
+    sidebar: false,
+    appbar: {
+      title: null,
+      showBackButton: false,
+      elevation: true
+    },
+    page: {
+      title: null,
+      layout: 'LayoutDefault'
+    }
   }
 
   // Sync with local storage.
