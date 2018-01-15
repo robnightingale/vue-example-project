@@ -28,8 +28,8 @@ const router = new Router({
       name: 'dashboard',
       component: function (resolve) {
         require(['@/components/dashboard/Dashboard.vue'], resolve)
-      },
-      beforeEnter: guardRoute
+      }
+//      beforeEnter: guardRoute
     },
     {
       path: '/grid',
@@ -37,22 +37,30 @@ const router = new Router({
       component: function (resolve) {
         require(['@/components/grid/DemoGrid.vue'], resolve)
       }
+    },
+    {
+      path: '/rest-api',
+      name: 'rest-api',
+      component: function (resolve) {
+        require(['@/components/rest-api/Endpoints.vue'], resolve)
+      }
     }
+
   ]
 })
 
-function guardRoute (to, from, next) {
-  // work-around to get to the Vuex store (as of Vue 2.0)
-  const auth = router.app.$options.store.state.auth
-
-  if (!auth.isLoggedIn) {
-    next({
-      path: '/login',
-      query: { redirect: to.fullPath }
-    })
-  } else {
-    next()
-  }
-}
+// function guardRoute (to, from, next) {
+//   // work-around to get to the Vuex store (as of Vue 2.0)
+//   const auth = router.app.$options.store.state.auth
+//
+//   if (!auth.isLoggedIn) {
+//     next({
+//       path: '/login',
+//       query: { redirect: to.fullPath }
+//     })
+//   } else {
+//     next()
+//   }
+// }
 
 export default router

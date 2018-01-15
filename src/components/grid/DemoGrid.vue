@@ -12,7 +12,7 @@
 </template>
 
 <script>
-  import gridimpl from './Grid.vue'
+  import gridimpl from '@/components/common/Grid.vue'
 
   export default {
     name: 'demo-grid',
