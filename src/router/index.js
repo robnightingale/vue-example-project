@@ -30,6 +30,13 @@ const router = new Router({
         require(['@/components/dashboard/Dashboard.vue'], resolve)
       },
       beforeEnter: guardRoute
+    },
+    {
+      path: '/grid',
+      name: 'grid',
+      component: function (resolve) {
+        require(['@/components/grid/DemoGrid.vue'], resolve)
+      }
     }
   ]
 })

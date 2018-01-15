@@ -74,7 +74,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-/* 
+/*
   You can use BEM style even though you are scoped. Helps to reason about
   your styles.
 */
