@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div>
     <div class="alert alert-warning alert-dismissible" role="alert">
       <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
         aria-hidden="true">&times;</span></button>
@@ -11,14 +11,14 @@
     <h1>JS Axios Demo
       <small>by CodingTheSmartWay.com</small>
     </h1>
-    <div class="jumbotron">
+    <div class="jumbotron-fluid">
       <h1>Welcome To Axios</h1>
       <h4>This applications uses Axios. Axios is a Promise-based HTTP client for JavaScript which can be used in your
         front-end application and in your Node.js backend. </h4>
     </div>
-    <div class="panel panel-primary">
-      <div class="panel-heading">GET Request</div>
-      <div class="panel-body">
+    <div class="card">
+      <div class="card-header">GET Request</div>
+      <div class="card-body">
         <button class="btn btn-primary" @click="getData">Get Todos</button>
         <!--<button class="btn btn-warning" @onclick="clearOutput">Clear</button>-->
         <p>Response: {{ counter }}</p>

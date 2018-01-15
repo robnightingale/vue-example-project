@@ -1,6 +1,6 @@
 <template>
 <!-- Fixed navbar -->
-<nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse ev-appnav">
+  <nav class="navbar navbar-light fixed-top" style="background-color: #e3f2fd;">
   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>

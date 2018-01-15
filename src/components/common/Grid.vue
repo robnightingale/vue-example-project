@@ -1,5 +1,5 @@
 <template>
-    <table>
+    <table class="container-fluid">
       <thead>
       <tr>
         <th v-for="key in columns"

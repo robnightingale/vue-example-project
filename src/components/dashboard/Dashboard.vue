@@ -13,7 +13,7 @@
 
       <a href="#" class="btn btn-primary"  @click="addressModalVisible = true">Open child modal</a><br><br>
       The visible status of the modal: <code>{{ addressModalVisible }}</code><br><br>
-      The address info: 
+      The address info:
       <pre>
 {{ addressInfo }}
       </pre>
@@ -29,7 +29,7 @@
     <div class="card-block">
       <h4 class="card-title">Vuex!</h4>
       <p class="card-text">
-        Let's use Vue with Vuex to react and watch for changes in another component. I've stored two values in Vuex to represent different ways state and events can be handled.     
+        Let's use Vue with Vuex to react and watch for changes in another component. I've stored two values in Vuex to represent different ways state and events can be handled.
 
         <div class="alert alert-info" role="alert">
           <strong>Heads up!</strong> Use the search in the navbar and watch the changes in the code block below:
@@ -51,7 +51,7 @@
         </p>
         <p>
           <strong>Use a Vuex watcher</strong><br>
-          Put a watcher on a Vuex property to attach behavior and side-effects to state changes:  
+          Put a watcher on a Vuex property to attach behavior and side-effects to state changes:
     <pre class="text-muted">
       mounted () {
         this.$store.watch((state) => {
@@ -64,7 +64,7 @@
         })
       }
     </pre>
-          When you perform a search from the navbar above, an alert box should show.       
+          When you perform a search from the navbar above, an alert box should show.
         </p>
       </p>
     </div>
@@ -88,7 +88,7 @@
   </div>
   <br>
 
-  <address-modal 
+  <address-modal
     v-if="addressModalVisible"
     :visible="true"
     @saved="addressInfo = arguments[0]"
