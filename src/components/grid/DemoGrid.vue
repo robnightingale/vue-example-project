@@ -2,11 +2,11 @@
   <div>
     <div class="card">
       <div class="card-header" data-target="#collapseOne" data-toggle="collapse">
-        <h3 class="panel-title">
-          <i class="fa fa-chevron-down fa-fw"></i> Portfolio Summary
+        <h3 class="card-title">
+          <i class="fa fa-chevron-down fa-chevron-right"></i> Portfolio Summary
         </h3>
       </div>
-      <div id="collapseOne" class="panel-collapse collapse in">
+      <div id="collapseOne" class="collapse in">
         <div class="card-body">
           <form id="search">
             <i class="fa fa-search"/> <input name="query" v-model="searchQuery">
@@ -22,11 +22,11 @@
     </div>
     <div class="card">
       <div class="card-header" data-target="#collapseTwo" data-toggle="collapse">
-        <h3 class="panel-title">
-          <i class="fa fa-chevron-down fa-fw"></i> Trade Blotter
+        <h3 class="card-title">
+          <i class="fa fa-chevron-down fa-chevron-right"></i> Trade Blotter
         </h3>
       </div>
-      <div id="collapseTwo" class="panel-collapse collapse in">
+      <div id="collapseTwo" class="card-block collapse in">
         <div class="card-body">
           <form id="search2">
             <i class="fa fa-search"/> <input name="query" v-model="searchQuery">
@@ -46,7 +46,7 @@
                 column resizing</label><br/>
             </div>
             <div id="hot-preview">
-              <HotTable :root="root" :settings="hotSettings"></HotTable>
+              <HotTable :root="root" :settings="hotSettings" style="font-size='7px'"></HotTable>
             </div>
           </div>
         </div>
