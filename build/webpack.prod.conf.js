@@ -1,5 +1,4 @@
 'use strict'
-
 const fs = require('fs')
 const path = require('path')
 const utils = require('./utils')
@@ -102,11 +101,11 @@ const webpackConfig = merge(baseWebpackConfig, {
         ignore: ['.*']
       }
     ]),
+    // service worker caching
     new SWPrecacheWebpackPlugin({
       cacheId: 'sparkle-client',
       filename: 'service-worker.js',
       staticFileGlobs: ['dist/**/*.{js,html,css}'],
-      stripPrefix: 'dist/'
       minify: true,
       $: 'jquery',
       jquery: 'jquery',
@@ -114,7 +113,8 @@ const webpackConfig = merge(baseWebpackConfig, {
       jQuery: 'jquery',
       '_': 'lodash',
       'Tether': 'tether',
-      utils: 'utils'
+      utils: 'utils',
+      stripPrefix: 'dist/'
     })
   ]
 })
