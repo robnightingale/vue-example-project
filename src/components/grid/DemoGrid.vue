@@ -6,7 +6,7 @@
           <i class="fa fa-chevron-down fa-chevron-right"></i> Portfolio Summary
         </h3>
       </div>
-      <div id="collapseOne" class="collapse in">
+      <div id="collapseOne" class="collapse show">
         <div class="card-body">
           <form id="search">
             <i class="fa fa-search"/> <input name="query" v-model="searchQuery">
@@ -26,7 +26,7 @@
           <i class="fa fa-chevron-down fa-chevron-right"></i> Trade Blotter
         </h3>
       </div>
-      <div id="collapseTwo" class="card-block collapse in">
+      <div id="collapseTwo" class="card-block collapse show">
         <div class="card-body">
           <form id="search2">
             <i class="fa fa-search"/> <input name="query" v-model="searchQuery">
@@ -447,5 +447,12 @@
 </script>
 
 <style scoped>
-  @import "~handsontable/dist/handsontable.full.min.css";
+  @import "~handsontable/dist/handsontable.full.css";
+
+  .card-header .fa {
+    transition: .3s transform ease-in-out;
+  }
+  .card-header .collapsed .fa {
+    transform: rotate(90deg);
+  }
 </style>
