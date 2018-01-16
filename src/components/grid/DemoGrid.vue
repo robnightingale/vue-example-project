@@ -12,11 +12,11 @@
             <i class="fa fa-search"/> <input name="query" v-model="searchQuery">
           </form>
           <p></p>
-          <gridimpl
+          <dataGrid
             :data="gridData"
             :columns="gridColumns"
             :filter-key="searchQuery">
-          </gridimpl>
+          </dataGrid>
         </div>
       </div>
     </div>
@@ -28,7 +28,7 @@
       </div>
       <div id="collapseTwo" class="panel-collapse collapse in">
         <div class="card-body">
-          <form id="search">
+          <form id="search2">
             <i class="fa fa-search"/> <input name="query" v-model="searchQuery">
           </form>
           <p></p>
@@ -42,11 +42,8 @@
 </template>
 
 <script>
-  import gridimpl from '../common/Grid.vue'
-
+  import dataGrid from '../common/Grid.vue'
   import HotTable from 'vue-handsontable-official';
-  import Vue from 'vue';
-
 
   export default {
     data: function () {
@@ -61,14 +58,24 @@
         ],
         root: 'test-hot',
         hotSettings: {
-          data: yourDataObject,
+          data: function(rows, columns) {
+            const result = [];
+            for (let i = 0; i < rows; i++) {
+              let row = [];
+              for (let j = 0; j < columns; j++) {
+                row.push('[' + i + ', ' + j + ']');
+              }
+              result.push(row);
+            }
+            return result;
+          }(40, 40),
           colHeaders: true
-        }
+        },
       };
     },
-    name: 'SampleApp',
+    // name: 'SampleApp',
     components: {
-      HotTable, gridimpl
+      HotTable, dataGrid
     }
   }
 </script>
